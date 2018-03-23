@@ -1,14 +1,14 @@
 #MyMakefile
 
 
-open: as1.pdf
-	xdg-open as1.pdf
+open: as2.pdf
+	xdg-open as2.pdf
 
-as1.pdf: as1.dvi
-	dvipdf as1.dvi 
+as2.pdf: as2.dvi
+	dvipdf as2.dvi 
 
-as1.dvi: as1.tex
-	latex as1.tex 
+as2.dvi: as2.tex
+	latex as2.tex 
 
 
 
