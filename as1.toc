@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Formalizing an Argument}{2}
+\contentsline {section}{\numberline {2}Tautologies and Friends}{3}
+\contentsline {section}{\numberline {3}Semantic Tableaux}{3}
+\contentsline {section}{\numberline {4}Kalish-Montegue Derivations}{3}
+\contentsline {section}{\numberline {5}Premises}{3}
+\contentsline {section}{\numberline {6}Normal Form}{3}
+\contentsline {section}{\numberline {7}Generalized DeMorgan's Laws}{3}
