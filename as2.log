@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  22 MAR 2018 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  24 MAR 2018 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -102,14 +102,14 @@ LaTeX Font Info:    ... okay on input line 4.
 
  [1
 
-] [2] [3] (./as2.aux) ) 
+] [2] [3] [4] (./as2.aux) ) 
 Here is how much of TeX's memory you used:
- 847 strings out of 494954
- 9387 string characters out of 6181003
- 60817 words of memory out of 5000000
- 4187 multiletter control sequences out of 15000+600000
- 9933 words of font info for 36 fonts, out of 8000000 for 9000
+ 851 strings out of 494954
+ 9425 string characters out of 6181003
+ 61817 words of memory out of 5000000
+ 4189 multiletter control sequences out of 15000+600000
+ 10554 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,6n,20p,510b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,6n,20p,509b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on as2.dvi (3 pages, 3424 bytes).
+Output written on as2.dvi (4 pages, 7036 bytes).

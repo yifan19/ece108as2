@@ -16,7 +16,7 @@
 \subsection{Big Bang Theory}
 If the Big Bang Theory is correct then either there was a time before anything existed or the world will come to an end.  The world will not come to an end.  Therefore, if there was no time before anything existed, the Big Bang Theory is incorrect.
 \[
-P: \text{If the Big Bang Theory is correct} 
+P: \text{the Big Bang Theory is correct} 
 \]
 \[
 Q: \text{there was a time before anything existed}
@@ -31,9 +31,10 @@ P \implies (Q \vee R)
 \neg R 
 \end{equation}
 \begin{equation} 
- \neg Q \implies \neg P 
+ \textbf{as a conclusion : } \neg Q \implies \neg P 
 \end{equation}
 
+\subsection{To Win a Gold Medal}
 To win a gold medal, an athlete must be very fit.  If s/he does not win a gold medal, then either s/he arrived late for the competition or his/her training was interrupted.  If s/he is not very fit, s/he will blame his/her coach.  If s/he blames his/her coach, or his/her training is interrupted, then s/he will will not get into the competition.  Therefore, if s/he gets into the competition, s/he will not have arrived late.
 \[
 P: \text{win a gold medal} 
@@ -45,20 +46,99 @@ Q: \text{an athlete must be very fit}
 R: \text{s/he arrived late for the competition } 
 \]
 \[
-S: \text{s/he arrived late for the competition } 
+S: \text{his/her training was interrupted.} 
 \]
-\
+\[
+T: \text{s/he will blame his/her coach}
+\]
+\[
+U: \text{if s/he gets into the competition}
+\]
 \begin{equation} 
-P \implies (Q \vee R) 
+P \implies Q 
 \end{equation}
 \begin{equation} 
-\neg R 
+\neg P \implies (R \vee S)
 \end{equation}
 \begin{equation} 
- \neg Q \implies \neg P 
+\neg Q \implies T
 \end{equation}
-%If Hector wins the battle, he will plunder the city.  If he does not win the battle, he will either be killed or go into exile.  If he plunders the city, then Priam will lose his kingdom.  If Priam loses his kingdom or Hector goes into exile, then the war will end.  Therefore, if the war does not end, Hector will be killed.
-%If the colonel was out of the room when the murder was committed then he couldn't have been right about the weapon used.  Either the butler is lying or he knows who the murderer was.  If Lady Barntree was not the murderer then either the colonel was in the room at the time or or the butler is lying.  Either the butler knows who the murderer was or the colonel was out of the room at the time of the murder.  Therefore, if the colonel was right about the weapon then Lady Barntree was the murderer.
+\begin{equation} 
+(T \vee S ) \implies \neg U
+\end{equation}
+\begin{equation} 
+\textbf{as conclusion: } U \implies \neg R
+\end{equation}
+
+\subsection{Hector and the Battle of Priam}
+
+If Hector wins the battle, he will plunder the city.  If he does not win the battle, he will either be killed or go into exile.  If he plunders the city, then Priam will lose his kingdom.  If Priam loses his kingdom or Hector goes into exile, then the war will end.  Therefore, if the war does not end, Hector will be killed. 
+\[
+P: \text{Hector wins the battle} 
+\]
+\[
+Q: \text{Hector plunders the city} 
+\]
+\[
+R: \text{Hector is killed} 
+\]
+\[
+S: \text{Hector goes into exile}
+\]
+\[
+T: \text{Priam will lose his kingdom}
+\]
+\[
+U: \text{war will end}
+\]
+
+\begin{equation} 
+P \implies Q 
+\end{equation}
+\begin{equation} 
+\neg P \implies (R \vee S)
+\end{equation}
+\begin{equation} 
+(T \vee S) \implies U
+\end{equation}
+\begin{equation} 
+\textbf{as conclusion: } \neg U \implies R
+\end{equation}
+
+\subsection{colonel and the murder}
+If the colonel was out of the room when the murder was committed then he couldn't have been right about the weapon used.  Either the butler is lying or he knows who the murderer was.  If Lady Barntree was not the murderer then either the colonel was in the room at the time or or the butler is lying.  Either the butler knows who the murderer was or the colonel was out of the room at the time of the murder.  Therefore, if the colonel was right about the weapon then Lady Barntree was the murderer.
+
+\[
+P: \text{the colonel was out of the room when the murder was committed}  
+\]
+\[
+Q: \text{colonel couldn't have been right about the weapon used} 
+\]
+\[
+R: \text{the butler is lying} 
+\]
+\[
+S: \text{the butler knows who the murderer was}
+\]
+\[
+T: \text{Lady Barntree was not the murderer} 
+\]
+
+\begin{equation} 
+P \implies Q 
+\end{equation}
+\begin{equation} 
+R \vee S
+\end{equation}
+\begin{equation} 
+T \implies (\neg P \vee R)
+\end{equation}
+\begin{equation} 
+S \vee P
+\end{equation}
+\begin{equation} 
+\textbf{as conclusion: } \neg Q \implies \neg T
+\end{equation}
 \section{Tautologies and Friends}
 
 \section{Semantic Tableaux}
