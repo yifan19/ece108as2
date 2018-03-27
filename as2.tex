@@ -226,17 +226,39 @@ not tautology
 $(P \rightarrow (Q \rightarrow (P \rightarrow Q)))$\\
 \begin{displaymath}
 \begin {array} {|c c |c|c|c|}
-P & Q & \lnot P \vee Q &P \rightarrow \lnot Q
-&(\lnot P \vee Q) \rightarrow (P \rightarrow \lnot Q)\\
+P & Q & (P \rightarrow Q) & (Q \rightarrow (P \rightarrow Q) 
+&(P \rightarrow (Q \rightarrow (P \rightarrow Q)))\\
 \hline
 F & F & T & T & T \\
 F & T & T & T & T \\
 T & F & F & T & T \\
-T & T & T & F & F \\
+T & T & T & T & T \\
 
 \end{array}
 \end{displaymath}
+tautology\\
+
 $((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightarrow Q)$\\
+\begin{displaymath}
+\begin {array} {|c c c|c|c|c|c|c|c|}
+P & Q & R & (P \wedge \lnot Q) & 
+((P \wedge \lnot Q) \rightarrow \lnot R)&
+P \wedge R) &
+(P \wedge R) \rightarrow Q\\
+\hline
+F & F & F & F & T & F & T\\
+F & F & T & F & T & F & T\\
+F & T & F & F & T & F & T\\
+F & T & T & F & T & F & T\\
+T & F & F & T & T & F & T\\
+T & F & T & T & F & T & F\\
+T & T & F & F & T & F & T\\
+T & T & T & F & T & T & T\\
+\end{array}
+\end{displaymath}
+we see that column 3 = column 5\\
+the if and only if is true, so tautology\\
+
 $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
 $(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (R \rightarrow S)))$\\
 $(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))$\\
