@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
-\usepackage{forest}
+\usepackage[linguistics]{forest}
 \begin{document}
 
 \title{ECE108 Assignment2}
@@ -34,20 +34,22 @@ P \implies (Q \vee R)
  \textbf{as a conclusion : } \neg Q \implies \neg P 
 \end{equation}
 \begin{displaymath}
-\begin {array} {|c c c|c|c|c|c|c|}
-P & Q & R & Q \vee R & \neg R & \neg Q & \neg P & \neg Q \implies \neg P\\
+\begin {array} {|c c c|c|c|c|c|c|c|}
+P & Q & R & Q \vee R & P \implies (Q \vee R) & 
+\neg R & \neg Q & \neg P & \neg Q \implies \neg P\\
 \hline
-F & F & F\\
-F & F & T\\
-F & T & F\\
-F & T & T\\
-T & F & F\\
-T & F & T\\
-T & T & F\\
-T & T & T\\
+F & F & F & F & T & T & T & T & T\\
+F & F & T & T & *T & *F & T & T & *T\\
+F & T & F & T & T & T & F & T & T\\
+F & T & T & T & T & F & F & T & T\\
+T & F & F & F & F & T & T & F & F\\
+T & F & T & T & T & F & T & F & F\\
+T & T & F & T & T & T & F & F & T\\
+T & T & T & T & T & F & F & F & T\\
 \end{array}
 \end{displaymath}
-
+*looking at row 2, I conclude it is not sound.
+\pagebreak
 \subsection{To Win a Gold Medal}
 To win a gold medal, an athlete must be very fit.  If s/he does not win a gold medal, then either s/he arrived late for the competition or his/her training was interrupted.  If s/he is not very fit, s/he will blame his/her coach.  If s/he blames his/her coach, or his/her training is interrupted, then s/he will will not get into the competition.  Therefore, if s/he gets into the competition, s/he will not have arrived late.
 \[
@@ -84,6 +86,15 @@ P \implies Q
 \textbf{as conclusion: } U \implies \neg R
 \end{equation}
 
+\begin{forest}
+[$P \implies Q \wedge \neg P \implies (R \vee S)$
+  [NP
+    [Det
+      [\textit{the}]
+    ]
+  ]
+]
+\end{forest}
 \subsection{Hector and the Battle of Priam}
 
 If Hector wins the battle, he will plunder the city.  If he does not win the battle, he will either be killed or go into exile.  If he plunders the city, then Priam will lose his kingdom.  If Priam loses his kingdom or Hector goes into exile, then the war will end.  Therefore, if the war does not end, Hector will be killed. 
