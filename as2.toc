@@ -2,7 +2,7 @@
 \contentsline {subsection}{\numberline {1.1}Big Bang Theory}{2}
 \contentsline {subsection}{\numberline {1.2}To Win a Gold Medal}{2}
 \contentsline {subsection}{\numberline {1.3}Hector and the Battle of Priam}{3}
-\contentsline {subsection}{\numberline {1.4}colonel and the murder}{3}
+\contentsline {subsection}{\numberline {1.4}colonel and the murder}{4}
 \contentsline {section}{\numberline {2}Tautologies and Friends}{4}
 \contentsline {section}{\numberline {3}Semantic Tableaux}{4}
 \contentsline {section}{\numberline {4}Kalish-Montegue Derivations}{4}
