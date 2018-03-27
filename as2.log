@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  27 MAR 2018 07:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  27 MAR 2018 07:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -680,14 +680,54 @@ LaTeX Font Info:    ... okay on input line 4.
  [1
 
 ] [2] [3]
-[4] [5] (./as2.aux) ) 
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--241
+
+ []
+
+[6] (./as2.aux) ) 
 Here is how much of TeX's memory you used:
  26365 strings out of 494954
  612602 string characters out of 6181003
- 634698 words of memory out of 5000000
+ 637698 words of memory out of 5000000
  29379 multiletter control sequences out of 15000+600000
  10901 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  131i,11n,158p,10371b,984s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on as2.dvi (5 pages, 16220 bytes).
+Output written on as2.dvi (6 pages, 20808 bytes).
