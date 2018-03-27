@@ -260,6 +260,32 @@ we see that column 3 = column 5\\
 the if and only if is true, so tautology\\
 
 $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
+
+\begin{displaymath}
+\begin {array} {|c c c|c|c|c|c|c|c|}
+P & Q & R & (P \wedge \lnot Q) & 
+((P \wedge \lnot Q) \rightarrow \lnot R)&
+P \wedge R) &
+(P \wedge R) \rightarrow Q\\
+\hline
+F & F & F & F & F & F & T & F & T\\
+F & F & F & F & T & F & T & F & T\\
+F & F & F & T & F & F & T & F & T\\
+F & F & F & T & T & F & T & F & T\\
+F & T & T & F & F & T & F & T\\
+F & T & T & T & F & T & F & T\\
+F & T & T & F & F & T & F & T\\
+F & T & T & T & F & T & F & T\\
+T & F & F & F & T & T & F & T\\
+T & F & F & T & T & F & T & F\\
+T & F & F & F & F & T & F & T\\
+T & F & F & T & F & T & T & T\\
+T & T & T & F & T & T & F & T\\
+T & T & T & T & T & F & T & F\\
+T & T & T & F & F & T & F & T\\
+T & T & T & T & F & T & T & T\\
+\end{array}
+\end{displaymath}
 $(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (R \rightarrow S)))$\\
 $(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))$\\
 \section{Semantic Tableaux}
