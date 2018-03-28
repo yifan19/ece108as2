@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  27 MAR 2018 08:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  27 MAR 2018 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -658,91 +658,140 @@ Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
 Package: forest-lib-linguistics 2015/11/14 v0.1
 \standardnodestrutbox=\box75
 )
-(./as2.aux)
+(/usr/local/share/texmf/tex/latex/footmisc/natded/natded.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count159
+\calc@Bcount=\count160
+\calc@Adimen=\dimen196
+\calc@Bdimen=\dimen197
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count161
+\calc@Cskip=\skip54
+)
+\negdepth@jaska=\skip55
+\posdepth@jaska=\skip56
+\lineheight@jaska=\skip57
+\hmargin@jaska=\skip58
+\vmargin@jaska=\skip59
+\vextra@jaska=\skip60
+\cmargin@jaska=\skip61
+\borderwidth@jaska=\skip62
+\nowidth@jaska=\skip63
+\hhrulebase@jaska=\skip64
+\stdepth@jaska=\skip65
+\stwidth@jaska=\skip66
+\arrayrowheight@jaska=\skip67
+\guardspace@jaska=\skip68
+\jguard@jaska=\skip69
+\kmguard@jaska=\skip70
+\templength@jaska=\skip71
+\tempbox@jaska=\box76
+\c@depth@jaskb=\count162
+\c@jdepth@jaskb=\count163
+\c@linecount@jaskb=\count164
+\templength@jaskb=\skip72
+\extrawin@jaskb=\skip73
+\extrawout@jaskb=\skip74
+\tempbox@jaskb=\box77
+) (./as2.aux)
 \openout1 = `as2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
- ABD: EveryShipout initializing macros (./as2.toc)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+ABD: EveryShipout initializing macros (./as2.toc)
 \tf@toc=\write4
 \openout4 = `as2.toc'.
 
  [1
 
-] [2] [3]
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+]
+\mlevel0@jaskb=\count165
+\plevel0@jaskb=\count166
+\blockwidth0@jaskb=\dimen198
+\mlevel1@jaskb=\count167
+\plevel1@jaskb=\count168
+\blockwidth1@jaskb=\dimen199
+\blockwidth2@jaskb=\dimen256
+\mlevel2@jaskb=\count169
+\plevel2@jaskb=\count170
+ [2] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--183
+Underfull \hbox (badness 10000) in paragraph at lines 183--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--240
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--261
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--265
+Underfull \hbox (badness 10000) in paragraph at lines 265--268
 
  []
 
 [6] [7] (./as2.aux) ) 
 Here is how much of TeX's memory you used:
- 26365 strings out of 494954
- 612602 string characters out of 6181003
- 637698 words of memory out of 5000000
- 29379 multiletter control sequences out of 15000+600000
+ 26547 strings out of 494954
+ 615280 string characters out of 6181003
+ 640573 words of memory out of 5000000
+ 29553 multiletter control sequences out of 15000+600000
  10901 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 131i,11n,158p,10371b,984s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 131i,12n,158p,10374b,984s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on as2.dvi (7 pages, 22692 bytes).
+Output written on as2.dvi (7 pages, 21856 bytes).
