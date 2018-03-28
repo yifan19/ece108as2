@@ -269,6 +269,24 @@ $(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lno
 
 \section{Kalish-Montegue Derivations}
 
+$(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
+\[
+\KMproof{
+  \cbblk{
+  \proofline{(P \wedge Q) \rightarrow (P \rightarrow Q)}{}
+  }{
+    \proofline{P \wedge Q}{1,CD}
+    \cbblk{
+     \proofline{P \rightarrow Q}{}
+   }{
+     \proofline{P}{3,CD}
+     \proofline{P}{2,SIMP}
+     \proofline{Q}{2,SIMP}
+    }
+%   
+ } 
+}
+\]
 \section{Premises}
 
 \section{Normal Form}
