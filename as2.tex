@@ -1,11 +1,10 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
 \usepackage[linguistics]{forest}
+\usepackage{natded}
 \begin{document}
 
-\title{ECE108 Assignment2}
-\author{Yi Fan Yu yf3yu@edu.uwaterloo.ca}
-\date{\today}
+\title{ECE108 Assignment2} \author{Yi Fan Yu yf3yu@edu.uwaterloo.ca} \date{\today}
 \maketitle
 
 \pagenumbering{arabic}
@@ -33,22 +32,26 @@ P \implies (Q \vee R)
 \begin{equation} 
  \textbf{as a conclusion : } \neg Q \implies \neg P 
 \end{equation}
-\begin{displaymath}
-\begin {array} {|c c c|c|c|c|c|c|c|}
-P & Q & R & Q \vee R & P \implies (Q \vee R) & 
-\neg R & \neg Q & \neg P & \neg Q \implies \neg P\\
-\hline
-F & F & F & F & T & T & T & T & T\\
-F & F & T & T & *T & *F & T & T & *T\\
-F & T & F & T & T & T & F & T & T\\
-F & T & T & T & T & F & F & T & T\\
-T & F & F & F & F & T & T & F & F\\
-T & F & T & T & T & F & T & F & F\\
-T & T & F & T & T & T & F & F & T\\
-T & T & T & T & T & F & F & F & T\\
-\end{array}
-\end{displaymath}
-*looking at row 2, I conclude it is not sound.
+
+\[
+\KMproof{
+  \cbblk{
+  \proofline {\lnot Q \rightarrow \lnot P} {}
+  }{
+    \proofline{\lnot Q}{1,CD}
+    \cbblk{
+    \proofline{\lnot P}{}}{
+      \proofline{P}{3,ID}
+      \proofline{P \rightarrow (Q \vee R)}{P2}
+      \proofline{Q \vee R}{4,5, MP}
+      \proofline{\lnot R} {P1} 
+      \proofline{Q}{5,6,MTP}
+      \proofline{\lnot Q}{2}
+    }
+  }
+}
+\]
+
 \pagebreak
 \subsection{To Win a Gold Medal}
 To win a gold medal, an athlete must be very fit.  If s/he does not win a gold medal, then either s/he arrived late for the competition or his/her training was interrupted.  If s/he is not very fit, s/he will blame his/her coach.  If s/he blames his/her coach, or his/her training is interrupted, then s/he will will not get into the competition.  Therefore, if s/he gets into the competition, s/he will not have arrived late.
@@ -421,6 +424,24 @@ T & T & T & T & T & T & T & T\\
 
 \section{Kalish-Montegue Derivations}
 
+$(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
+\[
+\KMproof{
+  \cbblk{
+  \proofline{(P \wedge Q) \rightarrow (P \rightarrow Q)}{}
+  }{
+    \proofline{P \wedge Q}{1,CD}
+    \cbblk{
+     \proofline{P \rightarrow Q}{}
+   }{
+     \proofline{P}{3,CD}
+     \proofline{P}{2,SIMP}
+     \proofline{Q}{2,SIMP}
+    }
+%   
+ } 
+}
+\]
 \section{Premises}
 
 \section{Normal Form}
