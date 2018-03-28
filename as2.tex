@@ -1,11 +1,10 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
 \usepackage[linguistics]{forest}
+\usepackage{natded}
 \begin{document}
 
-\title{ECE108 Assignment2}
-\author{Yi Fan Yu yf3yu@edu.uwaterloo.ca}
-\date{\today}
+\title{ECE108 Assignment2} \author{Yi Fan Yu yf3yu@edu.uwaterloo.ca} \date{\today}
 \maketitle
 
 \pagenumbering{arabic}
@@ -33,22 +32,26 @@ P \implies (Q \vee R)
 \begin{equation} 
  \textbf{as a conclusion : } \neg Q \implies \neg P 
 \end{equation}
-\begin{displaymath}
-\begin {array} {|c c c|c|c|c|c|c|c|}
-P & Q & R & Q \vee R & P \implies (Q \vee R) & 
-\neg R & \neg Q & \neg P & \neg Q \implies \neg P\\
-\hline
-F & F & F & F & T & T & T & T & T\\
-F & F & T & T & *T & *F & T & T & *T\\
-F & T & F & T & T & T & F & T & T\\
-F & T & T & T & T & F & F & T & T\\
-T & F & F & F & F & T & T & F & F\\
-T & F & T & T & T & F & T & F & F\\
-T & T & F & T & T & T & F & F & T\\
-T & T & T & T & T & F & F & F & T\\
-\end{array}
-\end{displaymath}
-*looking at row 2, I conclude it is not sound.
+
+\[
+\KMproof{
+  \cbblk{
+  \proofline {\lnot Q \rightarrow \lnot P} {}
+  }{
+    \proofline{\lnot Q}{1,CD}
+    \cbblk{
+    \proofline{\lnot P}{}}{
+      \proofline{P}{3,ID}
+      \proofline{P \rightarrow (Q \vee R)}{P2}
+      \proofline{Q \vee R}{4,5, MP}
+      \proofline{\lnot R} {P1} 
+      \proofline{Q}{5,6,MTP}
+      \proofline{\lnot Q}{2}
+    }
+  }
+}
+\]
+
 \pagebreak
 \subsection{To Win a Gold Medal}
 To win a gold medal, an athlete must be very fit.  If s/he does not win a gold medal, then either s/he arrived late for the competition or his/her training was interrupted.  If s/he is not very fit, s/he will blame his/her coach.  If s/he blames his/her coach, or his/her training is interrupted, then s/he will will not get into the competition.  Therefore, if s/he gets into the competition, s/he will not have arrived late.
@@ -166,10 +169,124 @@ S \vee P
 \end{equation}
 \section{Tautologies and Friends}
 
+$(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
+
+\begin{displaymath}
+\begin {array} {|c c |c|c|c|}
+P & Q & P \wedge Q &P \rightarrow Q & (P \wedge Q) \rightarrow (P \rightarrow Q)\\
+\hline
+F & F & F & T & T \\
+F & T & F & T & T \\
+T & F & F & F & T \\
+T & T & T & T & T \\
+\end{array}
+\end{displaymath}
+tautology\\
+$(P \wedge Q) \leftrightarrow (P \rightarrow Q)$\\
+\begin{displaymath}
+\begin {array} {|c c |c|c|c|}
+P & Q & P \wedge Q &P \rightarrow Q & (P \wedge Q) \iff (P \rightarrow Q)\\
+\hline
+F & F & F & T & F \\
+F & T & F & T & F \\
+T & F & F & F & T \\
+T & T & T & T & T \\
+
+\end{array}
+\end{displaymath}
+not tautology\\
+
+$(\lnot P \vee Q) \rightarrow (P \rightarrow \lnot Q)$\\
+\begin{displaymath}
+\begin {array} {|c c |c|c|c|}
+P & Q & \lnot P \vee Q &P \rightarrow \lnot Q
+&(\lnot P \vee Q) \rightarrow (P \rightarrow \lnot Q)\\
+\hline
+F & F & T & T & T \\
+F & T & T & T & T \\
+T & F & F & T & T \\
+T & T & T & F & F \\ 
+\end{array}
+\end{displaymath} 
+not tautology\\
+
+$(((P \rightarrow Q) \rightarrow P) \rightarrow Q)$\\
+
+\begin{displaymath}
+\begin {array} {|c c |c|c|c|}
+P & Q & (P \rightarrow Q) & ((P \rightarrow Q) \rightarrow P)
+&(((P \rightarrow Q) \rightarrow P) \rightarrow Q)\\
+\hline
+F & F & T & F & T \\
+F & T & T & F & T \\
+T & F & F & T & F \\
+T & T & T & T & T \\
+
+\end{array}
+\end{displaymath}
+not tautology
+
+$(P \rightarrow (Q \rightarrow (P \rightarrow Q)))$\\
+\begin{displaymath}
+\begin {array} {|c c |c|c|c|}
+P & Q & (P \rightarrow Q) & (Q \rightarrow (P \rightarrow Q) 
+&(P \rightarrow (Q \rightarrow (P \rightarrow Q)))\\
+\hline
+F & F & T & T & T \\
+F & T & T & T & T \\
+T & F & F & T & T \\
+T & T & T & T & T \\
+
+\end{array}
+\end{displaymath}
+tautology\\
+
+$((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightarrow Q)$\\
+\begin{displaymath}
+\begin {array} {|c c c|c|c|c|c|c|c|}
+P & Q & R & (P \wedge \lnot Q) & 
+((P \wedge \lnot Q) \rightarrow \lnot R)&
+P \wedge R) &
+(P \wedge R) \rightarrow Q\\
+\hline
+F & F & F & F & T & F & T\\
+F & F & T & F & T & F & T\\
+F & T & F & F & T & F & T\\
+F & T & T & F & T & F & T\\
+T & F & F & T & T & F & T\\
+T & F & T & T & F & T & F\\
+T & T & F & F & T & F & T\\
+T & T & T & F & T & T & T\\
+\end{array}
+\end{displaymath}
+we see that column 3 = column 5\\
+the if and only if is true, so tautology\\
+
+$(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
+$(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (R \rightarrow S)))$\\
+$(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))$\\
 \section{Semantic Tableaux}
 
 \section{Kalish-Montegue Derivations}
 
+$(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
+\[
+\KMproof{
+  \cbblk{
+  \proofline{(P \wedge Q) \rightarrow (P \rightarrow Q)}{}
+  }{
+    \proofline{P \wedge Q}{1,CD}
+    \cbblk{
+     \proofline{P \rightarrow Q}{}
+   }{
+     \proofline{P}{3,CD}
+     \proofline{P}{2,SIMP}
+     \proofline{Q}{2,SIMP}
+    }
+%   
+ } 
+}
+\]
 \section{Premises}
 
 \section{Normal Form}
