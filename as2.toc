@@ -5,7 +5,7 @@
 \contentsline {subsection}{\numberline {1.4}colonel and the murder}{4}
 \contentsline {section}{\numberline {2}Tautologies and Friends}{5}
 \contentsline {section}{\numberline {3}Semantic Tableaux}{10}
-\contentsline {section}{\numberline {4}Kalish-Montegue Derivations}{11}
-\contentsline {section}{\numberline {5}Premises}{14}
-\contentsline {section}{\numberline {6}Normal Form}{15}
-\contentsline {section}{\numberline {7}Generalized DeMorgan's Laws}{15}
+\contentsline {section}{\numberline {4}Kalish-Montegue Derivations}{13}
+\contentsline {section}{\numberline {5}Premises}{17}
+\contentsline {section}{\numberline {6}Normal Form}{18}
+\contentsline {section}{\numberline {7}Generalized DeMorgan's Laws}{18}

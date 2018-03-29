@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  29 MAR 2018 10:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  29 MAR 2018 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -838,13 +838,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 474--475
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
+
+ []
+
+[11]
+Overfull \hbox (98.88754pt too wide) in paragraph at lines 570--571
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
+
+ []
+
+[12]
+Overfull \hbox (61.90216pt too wide) in paragraph at lines 585--586
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--609
 
  []
 
@@ -852,48 +877,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--494
 \mlevel3@jaskb=\count171
 \plevel3@jaskb=\count172
 
-Overfull \hbox (19.87526pt too wide) detected at line 514
+Overfull \hbox (19.87526pt too wide) detected at line 629
 []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
-
- []
-
-
-Overfull \hbox (26.42827pt too wide) detected at line 542
-[]
- []
-
-[11]
-Overfull \hbox (9.02574pt too wide) detected at line 566
-[]
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 566--569
-
  []
 
 [13]
-Overfull \hbox (26.42827pt too wide) detected at line 593
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
+
+ []
+
+
+Overfull \hbox (26.42827pt too wide) detected at line 657
+[]
+ []
+
+[14]
+Overfull \hbox (9.02574pt too wide) detected at line 681
+[]
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 681--684
+
+ []
+
+[16]
+Overfull \hbox (26.42827pt too wide) detected at line 708
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 605--608
+Underfull \hbox (badness 10000) in paragraph at lines 720--723
 
  []
 
-[14] [15] (./as2.aux) ) 
+[17] [18] (./as2.aux) ) 
 Here is how much of TeX's memory you used:
- 29155 strings out of 494954
- 705887 string characters out of 6181003
+ 35120 strings out of 494954
+ 916545 string characters out of 6181003
  807425 words of memory out of 5000000
- 32137 multiletter control sequences out of 15000+600000
+ 38102 multiletter control sequences out of 15000+600000
  13024 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 141i,14n,165p,10374b,1189s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 181i,14n,193p,10374b,5343s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on as2.dvi (15 pages, 47124 bytes).
+Output written on as2.dvi (18 pages, 75212 bytes).
