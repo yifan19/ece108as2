@@ -4,6 +4,7 @@
 \usepackage{natded}
 \usepackage{prooftrees}
 \usepackage{tikz}
+\newcommand{\CommaPunct}{\mathpunct{\raisebox{0.5ex}{,}}}
 \begin{document}
 
 \title{ECE108 Assignment2} \author{Yi Fan Yu yf3yu@edu.uwaterloo.ca} \date{\today}
@@ -434,12 +435,39 @@ well we see in $S \rightarrow (P \vee T)$  that if P is True, then the whole thi
 therefore this is a tautology
 
 \section{Semantic Tableaux}
-% \begin{prooftree}
-% {
-%   to prove={(\exists x)((\forall y)(Py \lif x = y) \land Px) \sststile{}{} (\exists x)(\forall y)(
-%   Py \liff x = y)}
-% }
-% \end{prooftree}
+\begin{forest}
+[
+$(P \wedge Q) \rightarrow (P \rightarrow Q): F$
+[$(P \wedge Q): T \CommaPunct (P \rightarrow Q): F$
+[$ P :T \CommaPunct Q: F$
+[$ P :T \CommaPunct Q: T$
+[X]
+]
+]
+]
+]
+\end{forest}
+
+
+$(P \wedge Q) \leftrightarrow (P \rightarrow Q)$\\
+
+\begin{forest}
+[ $(P \wedge Q) \leftrightarrow (P \rightarrow Q): F$]
+% [$(P \wedge Q): T \CommaPunct (P \rightarrow Q): F$
+%   [$ P :T \CommaPunct Q: F$
+%     [$ P :T \CommaPunct Q: T$
+%       [X]
+%     ]
+%   ]
+% ]
+% [$(P \wedge Q): F \CommaPunct (P \rightarrow Q): T$
+%   [$P : F$  
+%     [$P:F \CommaPunct Q:T$]
+%       [O]
+%   ]
+%   [$Q : F$]  
+% ]
+\end{forest}
 
 \section{Kalish-Montegue Derivations}
 
