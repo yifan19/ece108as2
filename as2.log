@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  29 MAR 2018 11:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  29 MAR 2018 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -859,17 +859,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 572--573
  []
 
 [12]
-Overfull \hbox (61.90216pt too wide) in paragraph at lines 585--586
-[][] 
+Overfull \hbox (32.04828pt too wide) in paragraph at lines 585--587
+[][]
  []
 
-
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 588--589
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--609
+Underfull \hbox (badness 10000) in paragraph at lines 626--627
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
 
  []
 
@@ -877,48 +887,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 608--609
 \mlevel3@jaskb=\count171
 \plevel3@jaskb=\count172
 
-Overfull \hbox (19.87526pt too wide) detected at line 629
+Overfull \hbox (19.87526pt too wide) detected at line 695
 []
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 631--632
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--698
 
  []
 
 
-Overfull \hbox (26.42827pt too wide) detected at line 657
+Overfull \hbox (26.42827pt too wide) detected at line 723
 []
- []
-
-[14]
-Overfull \hbox (9.02574pt too wide) detected at line 681
-[]
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 681--684
-
  []
 
 [16]
-Overfull \hbox (26.42827pt too wide) detected at line 708
+Overfull \hbox (9.02574pt too wide) detected at line 747
+[]
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 747--750
+
+ []
+
+[18]
+Overfull \hbox (26.42827pt too wide) detected at line 774
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--723
+Underfull \hbox (badness 10000) in paragraph at lines 786--789
 
  []
 
-[17] [18] (./as2.aux) ) 
+[19] [20] (./as2.aux) ) 
 Here is how much of TeX's memory you used:
- 35120 strings out of 494954
- 916545 string characters out of 6181003
+ 36466 strings out of 494954
+ 983356 string characters out of 6181003
  807425 words of memory out of 5000000
- 38102 multiletter control sequences out of 15000+600000
+ 39448 multiletter control sequences out of 15000+600000
  13024 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 181i,14n,193p,10374b,5343s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 211i,14n,214p,10374b,5343s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on as2.dvi (18 pages, 75212 bytes).
+Output written on as2.dvi (20 pages, 89784 bytes).

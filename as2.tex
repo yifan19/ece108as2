@@ -583,6 +583,73 @@ $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
   ]
 ]
 \end{forest}
+\pagebreak
+
+$(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (R \rightarrow S)))$\\
+
+\begin{forest}
+[$(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (R \rightarrow S))):F$
+  [$(((P \rightarrow Q) \rightarrow R) \rightarrow S):T \CommaPunct$
+    [...$(P \rightarrow (Q \rightarrow (R \rightarrow S))): F$
+      [$P :T \CommaPunct (Q \rightarrow (R \rightarrow S)):F$
+        [similarly $Q:T \CommaPunct R:T \CommaPunct S:F$
+          [$(((P \rightarrow Q) \rightarrow R) \rightarrow S):F$ 
+            [X if you plug in values]
+          ]
+        ]
+      ]
+    ]
+  ]
+  [$(((P \rightarrow Q) \rightarrow R) \rightarrow S):F$
+    [...$(P \rightarrow (Q \rightarrow (R \rightarrow S))): T$
+      [$((P \rightarrow Q) \rightarrow R):T \CommaPunct S:F$
+        [$(P \rightarrow Q) :F$
+          [$P:T \CommaPunct Q:F$
+            [$P:F$
+              [X]
+            ]
+            [$(Q \rightarrow (R \rightarrow S)):T$
+              [$Q:F$
+                [O]
+              ] 
+              [$R \rightarrow S :T$]
+            ]
+          ]
+        ]
+        [$R:T$]
+      ]
+    ]
+  ]
+]
+\end{forest}
+
+$(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))$ \\
+
+\begin{forest}
+[$(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R)) : F$
+  [$(P \rightarrow (\lnot R \rightarrow \lnot S)):F$ ...
+    [...$((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R)):F$
+      [$(S \rightarrow (P \vee \lnot T)):F \CommaPunct (\lnot Q \rightarrow R):F$
+        [$ \lnot Q :True \CommaPunct R: F$
+          [$ Q:F$
+            [$ S:True \CommaPunct (P \vee \lnot T) : F$
+              [$ P:True \CommaPunct (\lnot R \rightarrow \lnot S) : F$
+                [ $\lnot R : True \CommaPunct \lnot S: F$
+                  [ $R:F \CommaPunct S:True$
+                    [$P:F \CommaPunct \not T : True$
+                      [X]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+]
+\end{forest}
 \section{Kalish-Montegue Derivations}
 
 $(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
@@ -600,7 +667,6 @@ $(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
      \proofline{P}{2,SIMP}
      \proofline{Q}{2,SIMP}
     }
-%   
  } 
 }
 \]
