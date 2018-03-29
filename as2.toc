@@ -6,6 +6,6 @@
 \contentsline {section}{\numberline {2}Tautologies and Friends}{5}
 \contentsline {section}{\numberline {3}Semantic Tableaux}{10}
 \contentsline {section}{\numberline {4}Kalish-Montegue Derivations}{10}
-\contentsline {section}{\numberline {5}Premises}{12}
-\contentsline {section}{\numberline {6}Normal Form}{12}
-\contentsline {section}{\numberline {7}Generalized DeMorgan's Laws}{12}
+\contentsline {section}{\numberline {5}Premises}{14}
+\contentsline {section}{\numberline {6}Normal Form}{14}
+\contentsline {section}{\numberline {7}Generalized DeMorgan's Laws}{14}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  28 MAR 2018 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  28 MAR 2018 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -823,11 +823,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 480--481
  []
 
 
-Overfull \hbox (19.87526pt too wide) detected at line 501
+Overfull \hbox (26.42827pt too wide) detected at line 506
 []
  []
 
-[11] [12] (./as2.aux) ) 
+[11]
+Overfull \hbox (9.02574pt too wide) detected at line 530
+[]
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 530--533
+
+ []
+
+[13]
+Overfull \hbox (26.42827pt too wide) detected at line 557
+[]
+ []
+
+[14] (./as2.aux) ) 
 Here is how much of TeX's memory you used:
  26139 strings out of 494954
  603550 string characters out of 6181003
@@ -837,4 +852,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  61i,14n,69p,10374b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on as2.dvi (12 pages, 37860 bytes).
+Output written on as2.dvi (14 pages, 44544 bytes).

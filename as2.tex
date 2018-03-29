@@ -486,14 +486,70 @@ $((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightar
   }{
     \proofline{(P \wedge \lnot Q) \rightarrow \lnot R}{1,CD}
      \cbblk{
-     \proofline{(P \wedge R) \rightarrow Q }{1,subDer}
+     \proofline{(P \wedge R) \rightarrow Q }{2,subDer}
    }{
-      \proofline{Q}{3,CD}
+      \proofline{P \wedge R}{3,CD}
+      \proofline{P}{4,SIMP}
+      \proofline{R}{4,SIMP}
+      \proofline{\lnot \lnot R}{6,DN}
+      \proofline{\lnot (P \wedge \lnot Q)} {2,7,MT}
       \cbblk{
-        \proofline{P \rightarrow Q} {3,subDerv}
+        \proofline{Q} {8,subDerv}
        }{
-        \proofline{P}{5,CD}
-        \proofline{Q}{4}
+        \proofline{\lnot Q}{9,ID}
+        \proofline{P \wedge \lnot Q}{5,10,ADJ}
+        \proofline{\lnot (P \wedge \lnot Q)}{8}
+        }
+    }
+  } 
+}
+\]
+\[
+\KMproof{
+  \cbblk{
+  \proofline{((P \wedge \lnot Q) \rightarrow \lnot R) \leftarrow ((P \wedge R) \rightarrow Q)}{}
+  }{
+    \proofline{(P \wedge R) \rightarrow Q }{1,CD}
+     \cbblk{
+     \proofline{(P \wedge \lnot Q) \rightarrow \lnot R}{subDer}
+   }{
+      \proofline{P \wedge \lnot Q}{3,CD}
+      \proofline{P}{4,SIMP}
+      \proofline{\lnot Q}{4,SIMP}
+      \proofline{\lnot (P \wedge R)}{2,6,MT}
+      \cbblk{
+        \proofline{\lnot R} {subDerv}
+       }{
+        \proofline{R}{8,ID}
+        \proofline{P \wedge R}{5,9,ADJ}
+        \proofline{\lnot (P \wedge R)}{7}
+        }
+    }
+  } 
+}
+\]
+\pagebreak\\ 
+$(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
+\[
+\KMproof{
+  \cbblk{
+  \proofline{(((P \vee Q) \vee R) \vee S) \rightarrow (P \vee (Q \vee (R \vee S)))}{}
+  }{
+    \proofline{(((P \vee Q) \vee R) \vee S)}{1,CD}
+     \cbblk{
+     \proofline{(P \vee (Q \vee (R \vee S)))}{2,subDer}
+   }{
+      \proofline{\lnot (P \vee (Q \vee (R \vee S)))}{3,ID}
+      \proofline{P}{4,SIMP}
+      \proofline{R}{4,SIMP}
+      \proofline{\lnot \lnot R}{6,DN}
+      \proofline{\lnot (P \wedge \lnot Q)} {2,7,MT}
+      \cbblk{
+        \proofline{Q} {8,subDerv}
+       }{
+        \proofline{\lnot Q}{9,ID}
+        \proofline{P \wedge \lnot Q}{5,10,ADJ}
+        \proofline{\lnot (P \wedge \lnot Q)}{8}
         }
     }
   } 
