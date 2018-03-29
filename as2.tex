@@ -556,7 +556,27 @@ $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
 }
 \]
 \section{Premises}
+if our premises form a contradiction, then
+  \[ \lnot ( P_{1} \wedge P_{2} \dots \wedge P_{N}) \rightarrow T \]
+we turn it into a tautology, then we do what we are used to do:
 
+we would then use a semantic tableau to show contradiction will always occurif we start with:
+
+  \[ \lnot ( P_{1} \wedge P_{2} \dots \wedge P_{N}) : F \]
+
+this will end up being:
+
+  \[ ( P_{1} \wedge P_{2} \dots \wedge P_{N}) : T\]
+  we would go through and split all the elements inside the ANDs
+  showing that our starting logic equation is indeed a tautology\\
+
+\bigskip
+
+we would also be able to use KM derivation
+indeed we would start with
+  \[ \lnot ( P_{1} \wedge P_{2} \dots \wedge P_{N}) \]
+then use the simplification inference rule on the ANDs to simplify the equation.
+We would end up 
 \section{Normal Form}
 
 \section{Generalized DeMorgan's Laws}
