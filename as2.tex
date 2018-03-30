@@ -90,10 +90,21 @@ P \implies Q
 \end{equation}
 \begin{equation} 
 \textbf{as conclusion: } U \implies \neg R
-\end{equation}
+\end{equation}\\
+Logic is not sound\\
+I can find a falsifying assignment:\\
+$P:True \CommaPunct Q:True \CommaPunct R:True \CommaPunct T:False \CommaPunct S:False \CommaPunct  U:True$\\
+The conclusion is false since:\\
+$U \rightarrow \lnot R : F$\\
+because $True \rightarrow False : False$\\
+But all the premises are true:\\
+$P$ is false so $P \rightarrow Q$ is True\\
+$R$ is true so $ \neg P \rightarrow(R \vee S)$ is True\\
+$Q$ us true so $ \neg Q \rightarrow T $ is also True\\
+$T$ and $S$ are both False so $ (T \vee S) \rightarrow \lnot U$ is True\\
 
-\subsection{Hector and the Battle of Priam}
 
+\subsection{Hector and the Battle of Priam} 
 If Hector wins the battle, he will plunder the city.  If he does not win the battle, he will either be killed or go into exile.  If he plunders the city, then Priam will lose his kingdom.  If Priam loses his kingdom or Hector goes into exile, then the war will end.  Therefore, if the war does not end, Hector will be killed. 
 \[
 P: \text{Hector wins the battle} 
@@ -125,7 +136,17 @@ P \implies Q
 \end{equation}
 \begin{equation} 
 \textbf{as conclusion: } \neg U \implies R
-\end{equation}
+\end{equation}\\
+Logic is not sound\\
+I can find a falsifying assignment:\\
+$P:True \CommaPunct Q:True \CommaPunct R:False\CommaPunct T:False \CommaPunct S:False \CommaPunct  U:False$\\
+The conclusion is false since:\\
+$\lnot U \rightarrow R : F$\\
+because $True \rightarrow False : False$\\
+But all the premises are true:\\
+$P$ and $Q$ are True so $P \rightarrow Q$ is True\\
+$\lnot P$ is False so $ \neg P \rightarrow(R \vee S)$ is True\\
+$T$ and $S$ are both False so $ (T \vee S) \rightarrow \lnot U$ is True\\
 
 \subsection{colonel and the murder}
 If the colonel was out of the room when the murder was committed then he couldn't have been right about the weapon used.  Either the butler is lying or he knows who the murderer was.  If Lady Barntree was not the murderer then either the colonel was in the room at the time or or the butler is lying.  Either the butler knows who the murderer was or the colonel was out of the room at the time of the murder.  Therefore, if the colonel was right about the weapon then Lady Barntree was the murderer.
@@ -150,17 +171,29 @@ T: \text{Lady Barntree was not the murderer}
 P \implies Q 
 \end{equation}
 \begin{equation} 
-R \vee S
+\neg(R \iff S)
 \end{equation}
 \begin{equation} 
 T \implies (\neg P \vee R)
 \end{equation}
 \begin{equation} 
-S \vee P
+\neg(S \iff P)
 \end{equation}
 \begin{equation} 
 \textbf{as conclusion: } \neg Q \implies \neg T
-\end{equation}
+\end{equation}\\
+Logic is not sound\\
+I can find a falsifying assignment:\\
+$P:False \CommaPunct Q:False \CommaPunct R:False\CommaPunct T:True \CommaPunct S:True$\\
+The conclusion is false since:\\
+$\lnot Q \rightarrow \not T : F$\\
+because $True \rightarrow False : False$\\
+But all the premises are true:\\
+$P$ is False so $P \rightarrow Q$ is True\\
+$R$ is False and $S$ is True so $\neg(S \iff P)$ is True\\
+$T$ and $\lnot P$ are both True so $T \implies (\neg P \vee R)$ is True\\
+$S$ is True and $P$ is False $\neg(S \iff P)$ is True\\
+\pagebreak
 \section{Tautologies and Friends}
 
 $(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
@@ -368,7 +401,7 @@ T & T & T & T & T & T & T\\
 \end{array}
 \end{displaymath}
 after brainlessly bruteforce everything in a truth table, we see that this is not a tautology.\\
-now... if I was smart I could have seen that the the only way for $P \rightarrow (Q \rightarrow(R \rightarrow S))$ to be true is S:False, P: True \\
+
 $(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))$\\
 
 \begin{displaymath}
@@ -576,9 +609,53 @@ $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
 \begin{forest}
 [$(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S))):F$
   [$(((P \vee Q) \vee R) \vee S):T \CommaPunct (P \vee (Q \vee (R \vee S))): F$
+    [$P:F \CommaPunct (Q \vee (R \vee S)):F$
+      [$Q:F \CommaPunct (R \vee S):F$
+        [$R:F \CommaPunct S:F$
+          [$S:T$
+            [X]
+          ]
+          [$((P \vee Q) \vee R):T$
+            [$R:T$
+              [X]
+            ]
+            [$(P\vee Q)$
+              [$P:T$
+                [X]
+              ]
+              [$Q:T$
+                [X]
+              ]
+            ]
+          ]
+        ] 
+      ]
+    ]
   ]
   [$(((P \vee Q) \vee R) \vee S):F$...
     [...$(P \vee (Q \vee (R \vee S))): T$
+      [$S:F \CommaPunct ((P \vee Q) \vee R) :F$
+        [$R:F \CommaPunct (P \vee Q):F$
+          [$P:F \CommaPunct Q:F$
+            [$R:T$
+              [X]
+            ]
+            [$(Q \vee (R \vee S)):T$
+              [$Q:T$
+                [X]
+              ]
+              [$(R\vee S)$
+                [$R:T$
+                  [X]
+                ]
+                [$S:T$
+                  [X]
+                ]
+              ]
+            ]
+          ] 
+        ]
+      ]
     ]
   ]
 ]
@@ -636,7 +713,7 @@ $(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lno
               [$ P:True \CommaPunct (\lnot R \rightarrow \lnot S) : F$
                 [ $\lnot R : True \CommaPunct \lnot S: F$
                   [ $R:F \CommaPunct S:True$
-                    [$P:F \CommaPunct \not T : True$
+                    [$P:F \CommaPunct \lnot T : True$
                       [X]
                     ]
                   ]
@@ -773,6 +850,8 @@ $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
 }
 \]
 \section{Premises}
+\subsection{Premises are Contradictions}
+
 if our premises form a contradiction, then
   \[ \lnot ( P_{1} \wedge P_{2} \dots \wedge P_{N}) \rightarrow T \]
 we turn it into a tautology, then we do what we are used to do:
@@ -785,15 +864,94 @@ this will end up being:
 
   \[ ( P_{1} \wedge P_{2} \dots \wedge P_{N}) : T\]
   we would go through and split all the elements inside the ANDs
-  showing that our starting logic equation is indeed a tautology\\
+  showing that our starting logic equation is indeed a tautology.\\
+  Therefore showing the contradiction.\\
 
 \bigskip
 
 we would also be able to use KM derivation
 indeed we would start with
-  \[ \lnot ( P_{1} \wedge P_{2} \dots \wedge P_{N}) \]
-then use the simplification inference rule on the ANDs to simplify the equation.
-We would end up 
+  \[ Show \lnot ( P_{1} \wedge P_{2} \dots \wedge P_{N}) \]
+  \[( P_{1} \wedge P_{2} \dots \wedge P_{N}) 1,ID\] 
+  
+if the premises are contradictory, we would end up with a contradiction\\
+proving our statement is true, therefore a tautology\\
+\bigskip\\
+Since we took the negation of our premises, we have then proven that our premises form a contradiction\\
+
+\subsection{Premises are Tautologies}
+Having a premise that is a tautology will not cause a problem for proving things, but the logical conclusion must also be a tautology by itself.\\
+I have to say that this makes the premises rather useless in the proof.\\
+\subsection{Some Practice}
+Consider the following set of premises: ``Sales of houses fall off if interest rates rise. Auctioneers are not happy if sales of houses fall off. Interest rates are rising. Auctioneers are happy.
+\[
+P: \text{Sales of houses fall off} 
+\]
+\[
+Q: \text{Interest rates rise}
+\]
+\[
+R: \text{Auctioneers are not happy}
+\]
+\begin{equation} 
+Q\rightarrow P 
+\end{equation}
+\begin{equation} 
+P \rightarrow R
+\end{equation}
+\begin{equation} 
+Q
+\end{equation}
+\begin{equation} 
+\lnot R
+\end{equation}
+\subsubsection{Truth Table}
+if this set of premises form a contradiction then that means
+  \[( (Q\rightarrow P) \wedge (P \rightarrow R) \wedge Q \wedge \lnot R )
+  \]
+  is always false \\
+\begin {displaymath}
+\begin {array} {|c c c|c|c|c|c|c|c|}
+P & Q & R & (Q \rightarrow P) & 
+(P \rightarrow R)&
+Q&
+\lnot R&
+(Q\rightarrow P) \wedge (P \rightarrow R) \wedge Q \wedge \lnot R \\
+\hline
+F & F & F & T & T & F & T & F\\
+F & F & T & T & T & F & F & F\\
+F & T & F & F & T & T & T & F\\
+F & T & T & F & T & T & F & F\\
+T & F & F & T & F & F & T & F\\
+T & F & T & T & T & F & F & F\\
+T & T & F & T & F & T & T & F\\
+T & T & T & T & T & T & F & F\\
+\end{array}
+\end{displaymath}
+as the last column says, it is indeed all false \\
+\subsubsection{KM derivation}
+  \[\lnot ( (Q\rightarrow P) \wedge (P \rightarrow R) \wedge Q \wedge \lnot R )
+  \]
+  is always true\\
+\[
+\KMproof{
+  \cbblk{
+  \proofline{\lnot ( (Q\rightarrow P) \wedge (P \rightarrow f) \wedge Q \wedge \lnot R )}{}
+  }{
+    \proofline{( (Q\rightarrow P) \wedge (P \rightarrow R) \wedge Q \wedge \lnot R )}{1,ID}
+    \proofline{(Q \rightarrow P)}{2,SIMP}
+    \proofline{(P \rightarrow R)}{2,SIMP}
+    \proofline{Q} {2,SIMP}
+    \proofline{\lnot R}{2,SIMP}
+    \proofline{P}{3,5,MP}
+    \proofline{\lnot P}{4,6,MT}
+  }
+}
+\]
+therefore 
+  \[( (Q\rightarrow P) \wedge (P \rightarrow R) \wedge Q \wedge \lnot R )
+  \]
+  is a contradiction
 \section{Normal Form}
 
 \section{Generalized DeMorgan's Laws}
