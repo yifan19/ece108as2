@@ -103,6 +103,7 @@ $R$ is true so $ \neg P \rightarrow(R \vee S)$ is True\\
 $Q$ us true so $ \neg Q \rightarrow T $ is also True\\
 $T$ and $S$ are both False so $ (T \vee S) \rightarrow \lnot U$ is True\\
 
+\pagebreak
 
 \subsection{Hector and the Battle of Priam} 
 If Hector wins the battle, he will plunder the city.  If he does not win the battle, he will either be killed or go into exile.  If he plunders the city, then Priam will lose his kingdom.  If Priam loses his kingdom or Hector goes into exile, then the war will end.  Therefore, if the war does not end, Hector will be killed. 
@@ -148,6 +149,7 @@ $P$ and $Q$ are True so $P \rightarrow Q$ is True\\
 $\lnot P$ is False so $ \neg P \rightarrow(R \vee S)$ is True\\
 $T$ and $S$ are both False so $ (T \vee S) \rightarrow \lnot U$ is True\\
 
+\pagebreak
 \subsection{colonel and the murder}
 If the colonel was out of the room when the murder was committed then he couldn't have been right about the weapon used.  Either the butler is lying or he knows who the murderer was.  If Lady Barntree was not the murderer then either the colonel was in the room at the time or or the butler is lying.  Either the butler knows who the murderer was or the colonel was out of the room at the time of the murder.  Therefore, if the colonel was right about the weapon then Lady Barntree was the murderer.
 
@@ -195,7 +197,7 @@ $T$ and $\lnot P$ are both True so $T \implies (\neg P \vee R)$ is True\\
 $S$ is True and $P$ is False $\neg(S \iff P)$ is True\\
 \pagebreak
 \section{Tautologies and Friends}
-
+\subsection{}
 $(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
 
 \begin{displaymath}
@@ -209,6 +211,7 @@ T & T & T & T & T \\
 \end{array}
 \end{displaymath}
 tautology\\
+\subsection{}
 $(P \wedge Q) \leftrightarrow (P \rightarrow Q)$\\
 \begin{displaymath}
 \begin {array} {|c c |c|c|c|}
@@ -223,6 +226,7 @@ T & T & T & T & T \\
 \end{displaymath}
 not tautology\\
 
+\subsection{}
 $(\lnot P \vee Q) \rightarrow (P \rightarrow \lnot Q)$\\
 \begin{displaymath}
 \begin {array} {|c c |c|c|c|}
@@ -236,7 +240,9 @@ T & T & T & F & F \\
 \end{array}
 \end{displaymath} 
 not tautology\\
+\pagebreak
 
+\subsection{}
 $(((P \rightarrow Q) \rightarrow P) \rightarrow Q)$\\
 
 \begin{displaymath}
@@ -252,7 +258,7 @@ T & T & T & T & T \\
 \end{array}
 \end{displaymath}
 not tautology
-
+\subsection{}
 $(P \rightarrow (Q \rightarrow (P \rightarrow Q)))$\\
 \begin{displaymath}
 \begin {array} {|c c |c|c|c|}
@@ -268,6 +274,7 @@ T & T & T & T & T \\
 \end{displaymath}
 tautology\\
 
+\subsection{}
 $((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightarrow Q)$\\
 \begin{displaymath}
 \begin {array} {|c c c|c|c|c|c|c|c|}
@@ -288,7 +295,8 @@ T & T & T & F & T & T & T\\
 \end{displaymath}
 we see that column 3 = column 5\\
 the if and only if is true, so tautology\\
-
+\pagebreak
+\subsection{}
 $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
 \begin{displaymath}
 \begin {array} {|c c c c|c|c|c|}
@@ -343,7 +351,8 @@ T & T & T\\
 \end{displaymath}
 
 as anyone can clearly see from commutativity of OR, this is a tautology
-
+\pagebreak
+\subsection{}
 $(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (R \rightarrow S)))$\\
 \begin{displaymath}
 \begin {array} {|c c c c|c|c|c|c|c}
@@ -401,7 +410,7 @@ T & T & T & T & T & T & T\\
 \end{array}
 \end{displaymath}
 after brainlessly bruteforce everything in a truth table, we see that this is not a tautology.\\
-
+\subsection{}
 $(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))$\\
 
 \begin{displaymath}
@@ -466,11 +475,13 @@ T & T & F & T & T & F& T\\
 well we see in $S \rightarrow (P \vee T)$  that if P is True, then the whole thing is true no matter T or S\\
 
 therefore this is a tautology
-
+\pagebreak
 \section{Semantic Tableaux}
+\subsection{Q1}
+$((P \wedge Q) \rightarrow (P \rightarrow Q))$\\
 \begin{forest}
 [
-$(P \wedge Q) \rightarrow (P \rightarrow Q): F$
+$((P \wedge Q) \rightarrow (P \rightarrow Q)): F$
 [$(P \wedge Q): T \CommaPunct (P \rightarrow Q): F$
 [$ P :T \CommaPunct Q: F$
 [$ P :T \CommaPunct Q: T$
@@ -479,9 +490,10 @@ $(P \wedge Q) \rightarrow (P \rightarrow Q): F$
 ]
 ]
 ]
-\end{forest}
+\end{forest}\\
+Tautology\\
 
-
+\subsection{Q2}
 $(P \wedge Q) \leftrightarrow (P \rightarrow Q)$\\
 
 \begin{forest}
@@ -502,8 +514,9 @@ $(P \wedge Q) \leftrightarrow (P \rightarrow Q)$\\
   [$Q : F$]  
 ]
 ]
-\end{forest}
-
+\end{forest}\\
+Neither\\
+\subsection{Q3}
 $(\lnot P \vee Q) \rightarrow (P \rightarrow \lnot Q)$\\
 \begin{forest}
 [ $(\lnot P \vee Q) \rightarrow (P \rightarrow \lnot Q): F$
@@ -522,24 +535,29 @@ $(\lnot P \vee Q) \rightarrow (P \rightarrow \lnot Q)$\\
     ]
   ]
 ]
-\end{forest}
-
+\end{forest}\\
+Neither\\
+\subsection{Q4}
 $(((P \rightarrow Q) \rightarrow P) \rightarrow Q)$\\
 
 \begin{forest}
 [$(((P \rightarrow Q) \rightarrow P) \rightarrow Q): F$
   [$(((P \rightarrow Q) \rightarrow P):T \CommaPunct Q: F$
     [$ P \rightarrow Q :F $
-      [...]
+      [$P:T \CommaPunct Q:F$
+        [O]
+      ]
     ]
     [$ P :T$
       [O]
     ]
   ]
 ]
-\end{forest}
+\end{forest}\\
 
-
+actually not a contradiction because of the truth table.
+Neither actually\\
+\subsection{Q5}
 $(P \rightarrow (Q \rightarrow (P \rightarrow Q)))$\\
 \begin{forest}
 [$(P \rightarrow (Q \rightarrow (P \rightarrow Q))): F$
@@ -551,8 +569,10 @@ $(P \rightarrow (Q \rightarrow (P \rightarrow Q)))$\\
     ]
   ]
 ]
-\end{forest}
-
+\end{forest}\\
+Neither\\
+\pagebreak
+\subsection{Q6}
 $((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightarrow Q)$\\
 
 \begin{forest}
@@ -600,12 +620,10 @@ $((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightar
     ]
   ]
 ]
-\end{forest}
-
+\end{forest}\\
+Tautology\\
+\subsection{Q7}
 $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
-
-\pagebreak 
-
 \begin{forest}
 [$(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S))):F$
   [$(((P \vee Q) \vee R) \vee S):T \CommaPunct (P \vee (Q \vee (R \vee S))): F$
@@ -659,9 +677,11 @@ $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
     ]
   ]
 ]
-\end{forest}
-\pagebreak
+\end{forest}\\
+Tautology\\
 
+\pagebreak
+\subsection{Q8}
 $(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (R \rightarrow S)))$\\
 
 \begin{forest}
@@ -698,8 +718,10 @@ $(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarro
     ]
   ]
 ]
-\end{forest}
-
+\end{forest}\\
+Neither\\
+\pagebreak
+\subsection{Q9}
 $(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))$ \\
 
 \begin{forest}
@@ -726,7 +748,10 @@ $(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lno
     ]
   ]
 ]
-\end{forest}
+\end{forest}\\
+Tautology\\
+\pagebreak
+
 \section{Kalish-Montegue Derivations}
 
 $(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
