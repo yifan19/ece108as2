@@ -188,7 +188,7 @@ Logic is not sound\\
 I can find a falsifying assignment:\\
 $P:False \CommaPunct Q:False \CommaPunct R:False\CommaPunct T:True \CommaPunct S:True$\\
 The conclusion is false since:\\
-$\lnot Q \rightarrow \not T : F$\\
+$\lnot Q \rightarrow \lnot T : F$\\
 because $True \rightarrow False : False$\\
 But all the premises are true:\\
 $P$ is False so $P \rightarrow Q$ is True\\
@@ -998,7 +998,7 @@ therefore
 \[ (P \wedge \lnot Q) \vee (P \wedge Q) \]
 \[ ((P \wedge \lnot Q) \vee P) \wedge ((P \wedge \lnot Q)  \vee Q) \]
 \[ ((P \vee P) \wedge (\lnot Q \vee P) \wedge ((P \vee Q)\wedge 
-  (\not Q \vee Q) \]
+  (\lnot Q \vee Q) \]
 \[ P \wedge (\lnot Q \vee P) \wedge ((P \vee Q)\]
 \[P\]
 \subsection{Q3}
