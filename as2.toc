@@ -1,45 +1,48 @@
-\contentsline {section}{\numberline {1}Formalizing an Argument}{3}
-\contentsline {subsection}{\numberline {1.1}Big Bang Theory}{3}
-\contentsline {subsection}{\numberline {1.2}To Win a Gold Medal}{4}
-\contentsline {subsection}{\numberline {1.3}Hector and the Battle of Priam}{5}
-\contentsline {subsection}{\numberline {1.4}colonel and the murder}{6}
-\contentsline {section}{\numberline {2}Tautologies and Friends}{7}
-\contentsline {subsection}{\numberline {2.1}Q1}{7}
-\contentsline {subsection}{\numberline {2.2}Q2}{7}
-\contentsline {subsection}{\numberline {2.3}Q3}{7}
-\contentsline {subsection}{\numberline {2.4}Q4}{8}
-\contentsline {subsection}{\numberline {2.5}Q5}{8}
-\contentsline {subsection}{\numberline {2.6}Q6}{8}
-\contentsline {subsection}{\numberline {2.7}Q7}{9}
-\contentsline {subsection}{\numberline {2.8}Q8}{10}
-\contentsline {subsection}{\numberline {2.9}Q9}{11}
-\contentsline {section}{\numberline {3}Semantic Tableaux}{13}
-\contentsline {subsection}{\numberline {3.1}Q1}{13}
-\contentsline {subsection}{\numberline {3.2}Q2}{13}
-\contentsline {subsection}{\numberline {3.3}Q3}{14}
-\contentsline {subsection}{\numberline {3.4}Q4}{14}
-\contentsline {subsection}{\numberline {3.5}Q5}{15}
-\contentsline {subsection}{\numberline {3.6}Q6}{16}
-\contentsline {subsection}{\numberline {3.7}Q7}{17}
-\contentsline {subsection}{\numberline {3.8}Q8}{18}
-\contentsline {subsection}{\numberline {3.9}Q9}{19}
-\contentsline {section}{\numberline {4}Kalish-Montegue Derivations}{20}
-\contentsline {subsection}{\numberline {4.1}Q1}{20}
-\contentsline {subsection}{\numberline {4.2}Q5}{20}
-\contentsline {subsection}{\numberline {4.3}Q6}{21}
-\contentsline {subsubsection}{\numberline {4.3.1}Forward}{21}
-\contentsline {subsubsection}{\numberline {4.3.2}Backward}{22}
-\contentsline {subsection}{\numberline {4.4}Q7}{23}
-\contentsline {subsection}{\numberline {4.5}Q9}{23}
-\contentsline {section}{\numberline {5}Premises}{23}
-\contentsline {subsection}{\numberline {5.1}Premises are Contradictions}{23}
-\contentsline {subsection}{\numberline {5.2}Premises are Tautologies}{24}
-\contentsline {subsection}{\numberline {5.3}Some Practice}{24}
-\contentsline {subsubsection}{\numberline {5.3.1}Truth Table}{25}
-\contentsline {subsubsection}{\numberline {5.3.2}KM derivation}{25}
-\contentsline {section}{\numberline {6}Normal Form}{26}
-\contentsline {subsection}{\numberline {6.1}Q2}{26}
-\contentsline {subsection}{\numberline {6.2}Q3}{26}
-\contentsline {subsection}{\numberline {6.3}Q4}{27}
-\contentsline {subsection}{\numberline {6.4}Q8}{27}
+\contentsline {section}{\numberline {1}Formalizing an Argument}{2}
+\contentsline {subsection}{\numberline {1.1}Big Bang Theory}{2}
+\contentsline {subsection}{\numberline {1.2}To Win a Gold Medal}{3}
+\contentsline {subsection}{\numberline {1.3}Hector and the Battle of Priam}{4}
+\contentsline {subsection}{\numberline {1.4}colonel and the murder}{5}
+\contentsline {section}{\numberline {2}Tautologies and Friends}{6}
+\contentsline {subsection}{\numberline {2.1}Q1}{6}
+\contentsline {subsection}{\numberline {2.2}Q2}{6}
+\contentsline {subsection}{\numberline {2.3}Q3}{6}
+\contentsline {subsection}{\numberline {2.4}Q4}{7}
+\contentsline {subsection}{\numberline {2.5}Q5}{7}
+\contentsline {subsection}{\numberline {2.6}Q6}{7}
+\contentsline {subsection}{\numberline {2.7}Q7}{8}
+\contentsline {subsection}{\numberline {2.8}Q8}{9}
+\contentsline {subsection}{\numberline {2.9}Q9}{10}
+\contentsline {section}{\numberline {3}Semantic Tableaux}{12}
+\contentsline {subsection}{\numberline {3.1}Q1}{12}
+\contentsline {subsection}{\numberline {3.2}Q2}{12}
+\contentsline {subsection}{\numberline {3.3}Q3}{13}
+\contentsline {subsection}{\numberline {3.4}Q4}{13}
+\contentsline {subsection}{\numberline {3.5}Q5}{14}
+\contentsline {subsection}{\numberline {3.6}Q6}{15}
+\contentsline {subsection}{\numberline {3.7}Q7}{16}
+\contentsline {subsection}{\numberline {3.8}Q8}{17}
+\contentsline {subsection}{\numberline {3.9}Q9}{18}
+\contentsline {section}{\numberline {4}Kalish-Montegue Derivations}{19}
+\contentsline {subsection}{\numberline {4.1}Q1}{19}
+\contentsline {subsection}{\numberline {4.2}Q5}{19}
+\contentsline {subsection}{\numberline {4.3}Q6}{20}
+\contentsline {subsubsection}{\numberline {4.3.1}Forward}{20}
+\contentsline {subsubsection}{\numberline {4.3.2}Backward}{21}
+\contentsline {subsection}{\numberline {4.4}Q7}{22}
+\contentsline {subsection}{\numberline {4.5}Q9}{22}
+\contentsline {section}{\numberline {5}Premises}{22}
+\contentsline {subsection}{\numberline {5.1}Premises are Contradictions}{22}
+\contentsline {subsection}{\numberline {5.2}Premises are Tautologies}{23}
+\contentsline {subsection}{\numberline {5.3}Some Practice}{23}
+\contentsline {subsubsection}{\numberline {5.3.1}Truth Table}{24}
+\contentsline {subsubsection}{\numberline {5.3.2}KM derivation}{24}
+\contentsline {section}{\numberline {6}Normal Form}{25}
+\contentsline {subsection}{\numberline {6.1}Q2}{25}
+\contentsline {subsection}{\numberline {6.2}Q3}{25}
+\contentsline {subsection}{\numberline {6.3}Q4}{26}
+\contentsline {subsection}{\numberline {6.4}Q8}{26}
 \contentsline {section}{\numberline {7}Generalized DeMorgan's Laws}{28}
+\contentsline {subsection}{\numberline {7.1}Base Cases}{28}
+\contentsline {subsubsection}{\numberline {7.1.1}OR to AND forward}{28}
+\contentsline {subsubsection}{\numberline {7.1.2}OR to AND Backward}{29}

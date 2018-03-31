@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  31 MAR 2018 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  31 MAR 2018 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -720,279 +720,346 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))) (./as2.aux)
+)))
+(/usr/local/share/texmf/tex/latex/footmisc/karnaugh-map/karnaugh-map.sty
+Package: karnaugh-map 2017/02/20 v1.1 Draw Karnaugh Maps
+
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count165
+\decimalpart=\count166
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'karnaugh-map' with sig. 's O{4} O{4} O{1} O{$X_1X_0$}
+. O{$X_3X_2$} O{$X_5X_4$}' on line 281.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \autoterms with sig. 'O{-}' on line 311.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \indeterminants with sig. 'm' on line 317.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \manualterms with sig. 'm' on line 342.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \maxterms with sig. 'm' on line 348.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \minterms with sig. 'm' on line 354.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \terms with sig. 'm m' on line 367.
+.................................................
+\@karnaughmap@var@colorindex@=\count167
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \implicant with sig. 'm m O{0}' on line 426.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \implicantedge with sig. 'm m m m O{0}' on line 565.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \implicantcorner with sig. 'O{0}' on line 634.
+.................................................
+) (./as2.aux)
 \openout1 = `as2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-
-ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./as2.toc [1
+) (./as2.toc)
+\tf@toc=\write5
+\openout5 = `as2.toc'.
 
-])
-\tf@toc=\write4
-\openout4 = `as2.toc'.
+ [1
 
-
-[2]
-\mlevel0@jaskb=\count165
-\plevel0@jaskb=\count166
+]
+\mlevel0@jaskb=\count168
+\plevel0@jaskb=\count169
 \blockwidth0@jaskb=\dimen198
-\mlevel1@jaskb=\count167
-\plevel1@jaskb=\count168
+\mlevel1@jaskb=\count170
+\plevel1@jaskb=\count171
 \blockwidth1@jaskb=\dimen199
 \blockwidth2@jaskb=\dimen256
-\mlevel2@jaskb=\count169
-\plevel2@jaskb=\count170
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 93--105
+\mlevel2@jaskb=\count172
+\plevel2@jaskb=\count173
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 95--107
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 140--151
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 142--153
 
  []
 
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 214--216
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--228
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--276
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--415
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--413
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 414--415
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 475--476
+Underfull \hbox (badness 10000) in paragraph at lines 483--497
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--521
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--542
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 481--495
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--519
+Underfull \hbox (badness 10000) in paragraph at lines 560--562
+
+ []
+
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--540
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 541--542
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 558--560
-
- []
-
-[14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 576--577
-
- []
-
-
-Overfull \hbox (98.88754pt too wide) in paragraph at lines 623--625
+Overfull \hbox (98.88754pt too wide) in paragraph at lines 625--627
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--625
+Underfull \hbox (badness 10000) in paragraph at lines 625--627
 
  []
 
 
-Overfull \hbox (48.36018pt too wide) in paragraph at lines 626--682
+Overfull \hbox (48.36018pt too wide) in paragraph at lines 628--684
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 626--682
+Underfull \hbox (badness 10000) in paragraph at lines 628--684
 
  []
 
-[16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 685--686
+[15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 687--688
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 757--758
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 776--777
+Underfull \hbox (badness 10000) in paragraph at lines 778--779
 
  []
 
 \blockwidth3@jaskb=\dimen257
-\mlevel3@jaskb=\count171
-\plevel3@jaskb=\count172
+\mlevel3@jaskb=\count174
+\plevel3@jaskb=\count175
 
-Overfull \hbox (19.87526pt too wide) detected at line 797
+Overfull \hbox (19.87526pt too wide) detected at line 799
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 799--800
+Underfull \hbox (badness 10000) in paragraph at lines 801--802
 
  []
 
-[20]
-Overfull \hbox (26.42827pt too wide) detected at line 826
+[19]
+Overfull \hbox (26.42827pt too wide) detected at line 828
 []
  []
 
 
-Overfull \hbox (9.02574pt too wide) detected at line 851
+Overfull \hbox (9.02574pt too wide) detected at line 853
 []
  []
 
-[21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 854--855
+[20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 856--857
 
  []
 
 
-Overfull \hbox (26.42827pt too wide) detected at line 879
+Overfull \hbox (26.42827pt too wide) detected at line 881
 []
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 896--900
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 908--912
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 914--916
+
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 894--898
+Underfull \hbox (badness 10000) in paragraph at lines 942--944
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--910
+Underfull \hbox (badness 10000) in paragraph at lines 961--963
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--914
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 940--942
+Underfull \hbox (badness 10000) in paragraph at lines 965--967
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 959--961
+Underfull \hbox (badness 10000) in paragraph at lines 987--989
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 963--965
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 985--987
-
- []
-
-[25] [26]
-Overfull \hbox (80.63643pt too wide) detected at line 1037
+[24] [25]
+Overfull \hbox (80.63643pt too wide) detected at line 1039
 \OT1/cmr/m/n/12 ((\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr
 /m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/
 12 Q\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \O
@@ -1009,7 +1076,7 @@ m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ))
  []
 
 
-Overfull \hbox (75.3033pt too wide) detected at line 1038
+Overfull \hbox (75.3033pt too wide) detected at line 1040
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/
 m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 P
  \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 Q\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML
@@ -1027,7 +1094,7 @@ MS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ))
  []
 
 
-Overfull \hbox (59.30327pt too wide) detected at line 1039
+Overfull \hbox (59.30327pt too wide) detected at line 1041
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/
 m/n/12 ((\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 Q\OT1/cmr/m/n/
 12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ 
@@ -1044,7 +1111,7 @@ mm/m/it/12 S\OT1/cmr/m/n/12 ))
  []
 
 
-Overfull \hbox (67.30328pt too wide) detected at line 1040
+Overfull \hbox (67.30328pt too wide) detected at line 1042
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 ((\OMS/cmsy/m/n/12 :\OT1/cmr
 /m/n/12 (\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 Q\OT1/cmr/m/n/
 12 ) \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _
@@ -1061,12 +1128,12 @@ cmm/m/it/12 S\OT1/cmr/m/n/12 ))
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1040--1043
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1045
 
  []
 
 
-Overfull \hbox (4.37401pt too wide) detected at line 1048
+Overfull \hbox (4.37401pt too wide) detected at line 1050
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R \OMS/
 cmsy/m/n/12 _ :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/c
 msy/m/n/12 _ :\OML/cmm/m/it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/
@@ -1079,19 +1146,43 @@ cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 S \OMS/cmsy/m/n/12 _ :\OML/cmm/m
 it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 )
  []
 
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 1049--1052
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1054
 
  []
 
-[28] (./as2.aux) ) 
+\@karnaughmap@local@cellcount@=\count176
+\@karnaughmap@local@northwest@=\count177
+\@karnaughmap@local@southeast@=\count178
+\@karnaughmap@local@testcaseone@=\count179
+\@karnaughmap@local@testcasetwo@=\count180
+\@karnaughmap@local@coordinateonecounter@=\count181
+\@karnaughmap@local@coordinatetwocounter@=\count182
+\@karnaughmap@local@coordinateonecounter@=\count183
+\@karnaughmap@local@coordinatetwocounter@=\count184
+
+Underfull \hbox (badness 10000) in paragraph at lines 1059--1067
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1073
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1075
+
+ []
+
+[28] [29] (./as2.aux) ) 
 Here is how much of TeX's memory you used:
- 39277 strings out of 494954
- 1109030 string characters out of 6181003
- 802425 words of memory out of 5000000
- 42259 multiletter control sequences out of 15000+600000
- 13024 words of font info for 50 fonts, out of 8000000 for 9000
+ 39968 strings out of 494954
+ 1122882 string characters out of 6181003
+ 812126 words of memory out of 5000000
+ 42938 multiletter control sequences out of 15000+600000
+ 14572 words of font info for 56 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  211i,14n,214p,10374b,6244s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on as2.dvi (28 pages, 127612 bytes).
+Output written on as2.dvi (29 pages, 130828 bytes).

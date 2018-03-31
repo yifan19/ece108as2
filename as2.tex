@@ -4,6 +4,8 @@
 \usepackage{natded}
 \usepackage{prooftrees}
 \usepackage{tikz}
+\usepackage{karnaugh-map}
+
 \newcommand{\CommaPunct}{\mathpunct{\raisebox{0.5ex}{,}}}
 \begin{document}
 
@@ -1056,9 +1058,61 @@ now right hand side...\\
 \[(P \wedge Q \wedge R \wedge \lnot S)\vee (\lnot P \wedge \lnot R )\vee (Q \wedge \lnot R) \vee S\]
 \[(P \wedge Q \wedge R \wedge \lnot S)\vee (\lnot P \wedge \lnot R )\vee (Q \vee S )\wedge (\lnot R \vee S)\]
 this is a sum of products, I am going to use my ECE124 knowledge to convert this in to POS (CNF)\\
+\begin{karnaugh-map}[4][4][1][$P Q$][$R S$]
+  \manualterms{1,1,0,1,1,1,1,1,0,0,0,1,1,1,1,1}
+  \implicant{8}{9}
+  \implicantedge{2}{2}{10}{10}
+\end{karnaugh-map}\\
+CNF form:\\
+\[(P \vee \lnot R \vee S) \wedge (\lnot P \vee Q \vee S)\]\\
+\pagebreak
 
 \section{Generalized DeMorgan's Laws}
-
+\setcounter{equation}{0}
+using induction...\\
+\subsection{Base Cases}
+probably should check the base case with one operator (i = 2)\\
+\begin{equation}
+(P_{1} \vee P_{2}) \leftrightarrow \lnot (\lnot P_{1} \wedge \lnot P_{2})
+\end{equation}
+\subsubsection{or to and forward}
+\[
+\kmproof{
+  \cbblk{
+  \proofline{ (p_{1} \vee p_{2}) \rightarrow \lnot (\lnot p_{1} \wedge \lnot p_{2})}{}
+  }{
+    \proofline{(p_{1} \vee p_{2})}{1,cd}
+     \cbblk{
+     \proofline{\lnot (\lnot p_{1} \wedge \lnot p_{2})}{2,subder}
+   }{
+      \proofline{(\lnot p_{1} \wedge \lnot p_{2})}{3,id}
+      \proofline{\lnot p_{1}}{4,simp}
+      \proofline{\lnot p_{2}}{4,simp}
+      \proofline{p_{1}}{6,2,mtp}
+    }
+  } 
+}
+\]
+\subsubsection{OR to AND Backward} 
+\[
+\KMproof{
+  \cbblk{
+  \proofline{ (P_{1} \vee P_{2}) \leftarrow \lnot (\lnot P_{1} \wedge \lnot P_{2})}{}
+  }{
+    \proofline{\lnot (\lnot P_{1} \wedge \lnot P_{2})}{1,CD}
+     \cbblk{
+     \proofline{(P_{1} \vee P_{2})}{2,subDer}
+   }{
+      \proofline{(\lnot P_{1} \wedge \lnot P_{2})}{3,ID}
+      \proofline{\lnot P_{1}}{4,SIMP}
+      \proofline{\lnot P_{2}}{4,SIMP}
+      \proofline{P_{1}}{6,2,MTP}
+    } 
+  }
+}
+\]
+\begin{equation}
+(P_{1} \wedge  P_{2}) \leftrightarrow \lnot (\lnot P_{1} \vee \lnot P_{2})
+\end{equation}
 \end{document}
-
 
