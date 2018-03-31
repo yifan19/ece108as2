@@ -1070,12 +1070,12 @@ CNF form:\\
 \section{Generalized DeMorgan's Laws}
 \setcounter{equation}{0}
 using induction...\\
-\subsection{Base Cases}
+\subsection{Negation of Conjunction }
 probably should check the base case with one operator (i = 2)\\
 \begin{equation}
 (P_{1} \vee P_{2}) \leftrightarrow \lnot (\lnot P_{1} \wedge \lnot P_{2})
 \end{equation}
-\subsubsection{or to and forward}
+\subsubsection{Base Case : or to and forward}
 \[
 \KMproof{
   \cbblk{
@@ -1094,9 +1094,22 @@ probably should check the base case with one operator (i = 2)\\
 }
 \]
 \subsubsection{OR to AND Backward} 
-I need to prove a theorem really quicky before I prove this:
-\subsubsection{Theorem 1}
-\[\frac{\lnot (P_{1} \vee P_{2})}{P_{1}}\]
+\paragraph{Theorem 1}
+ need to prove a theorem really quicky before I prove this:\\
+\[\frac{\lnot (P_{1} \vee P_{2})}{\lnot P_{1}}\]
+proof by models through semantic tableau:\\
+\begin{forest}
+[$\lnot (P_{1} \vee P_{2}):T \CommaPunct \lnot P_{1} : F$
+  [$P_{1} : T$
+    [$(P_{1} \vee P_{2}):F$
+      [$(P_{1}:F) \CommaPunct (P_{2} : F)$
+        [X]
+      ]
+    ]
+  ]
+]
+\end{forest}\\
+
 
 \[
 \KMproof{
@@ -1107,17 +1120,74 @@ I need to prove a theorem really quicky before I prove this:
      \cbblk{
      \proofline{(P_{1} \vee P_{2})}{2,subDer}
    }{
-      \proofline{(\lnot P_{1} \wedge \lnot P_{2})}{3,ID}
-      \proofline{\lnot P_{1}}{4,SIMP}
-      \proofline{\lnot P_{2}}{4,SIMP}
-      \proofline{P_{1}}{6,2,MTP}
+      \proofline{\lnot (P_{1} \vee P_{2})}{3,ID}
+      \proofline{\lnot P_{1}}{4,THEOREM1}
+      \proofline{\lnot P_{2}}{4,THEOREM1}
+      \proofline{\lnot P_{1} \wedge \lnot P_{2}} {5,6,ADJ}
+      \proofline{\lnot (\lnot P_{1} \wedge \lnot P_{2})}{2}
     } 
   }
 }
 \]
 
+\subsection{Negation of Disjunction}
 \begin{equation}
 (P_{1} \wedge  P_{2}) \leftrightarrow \lnot (\lnot P_{1} \vee \lnot P_{2})
 \end{equation}
+\subsubsection{Forward}
+
+\[
+\KMproof{
+  \cbblk{
+  \proofline {(P_{1} \wedge  P_{2}) \rightarrow \lnot (\lnot P_{1} \vee \lnot P_{2})}{}
+  }{
+    \proofline{(P_{1} \vee P_{2})}{1,CD}
+     \cbblk{
+     \proofline{\lnot (\lnot P_{1} \wedge \lnot P_{2})}{2,SUBDERI}
+   }{
+      \proofline{(\lnot P_{1} \wedge \lnot P_{2})}{3,ID}
+      \proofline{\lnot P_{1}}{4,SIMP}
+      \proofline{\lnot P_{2}}{4,SIMP}
+      \proofline{P_{1}}{6,2,MTP}
+    }
+ } 
+}
+\]
+\subsubsection{OR to AND Backward} 
+\paragraph{Theorem 1}
+ need to prove a theorem really quicky before I prove this:\\
+\[\frac{\lnot (P_{1} \vee P_{2})}{\lnot P_{1}}\]
+proof by models through semantic tableau:\\
+\begin{forest}
+[$\lnot (P_{1} \vee P_{2}):T \CommaPunct \lnot P_{1} : F$
+  [$P_{1} : T$
+    [$(P_{1} \vee P_{2}):F$
+      [$(P_{1}:F) \CommaPunct (P_{2} : F)$
+        [X]
+      ]
+    ]
+  ]
+]
+\end{forest}\\
+
+
+\[
+\KMproof{
+  \cbblk{
+  \proofline{ (P_{1} \vee P_{2}) \leftarrow \lnot (\lnot P_{1} \wedge \lnot P_{2})}{}
+  }{
+    \proofline{\lnot (\lnot P_{1} \wedge \lnot P_{2})}{1,CD}
+     \cbblk{
+     \proofline{(P_{1} \vee P_{2})}{2,subDer}
+   }{
+      \proofline{\lnot (P_{1} \vee P_{2})}{3,ID}
+      \proofline{\lnot P_{1}}{4,THEOREM1}
+      \proofline{\lnot P_{2}}{4,THEOREM1}
+      \proofline{\lnot P_{1} \wedge \lnot P_{2}} {5,6,ADJ}
+      \proofline{\lnot (\lnot P_{1} \wedge \lnot P_{2})}{2}
+    } 
+  }
+}
+\]
 \end{document}
 
