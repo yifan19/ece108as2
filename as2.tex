@@ -366,7 +366,7 @@ F & F & F & F & T & F & T\\
 F & F & F & T & T & F & T\\
 F & F & T & F & T & T & F\\
 F & F & T & T & T & T & T\\
-F & T & F & F & T & F & F\\
+F & T & F & F & T & F & T\\
 F & T & F & T & T & F & T\\
 F & T & T & F & T & T & F\\
 F & T & T & T & T & T & T\\
@@ -374,7 +374,7 @@ T & F & F & F & F & T & F\\
 T & F & F & T & F & T & T\\
 T & F & T & F & F & T & F\\
 T & F & T & T & F & T & T\\
-T & T & F & F & T & F & F\\
+T & T & F & F & T & F & T\\
 T & T & F & T & T & F & T\\
 T & T & T & F & T & T & F\\
 T & T & T & T & T & T & T\\
@@ -1031,6 +1031,32 @@ therefore
 
 \[(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (R \rightarrow S)))\]
 \[(((\lnot P \vee Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (\lnot R \vee S)))\]
+\[((\lnot (\lnot P \vee Q) \vee R) \rightarrow S) \leftrightarrow (P \rightarrow (\lnot Q \vee (\lnot R \vee S)))\]
+\[(\lnot (\lnot (\lnot P \vee Q) \vee R) \vee S) \leftrightarrow (\lnot P \vee (\lnot Q \vee (\lnot R \vee S)))\]
+\[(\lnot (\lnot (\lnot P \vee Q) \vee R) \vee S) \leftrightarrow (\lnot P \vee \lnot Q \vee \lnot R \vee S)\]
+\[((\lnot (\lnot (\lnot P \vee Q) \vee R) \vee S) \rightarrow (\lnot P \vee \lnot Q \vee \lnot R \vee S))\wedge ((\lnot P \vee \lnot Q \vee \lnot R \vee S)\rightarrow (\lnot (\lnot (\lnot P \vee Q) \vee R) \vee S))\]
+\[(\lnot (\lnot (\lnot (\lnot P \vee Q) \vee R) \vee S) \vee (\lnot P \vee \lnot Q \vee \lnot R \vee S))\wedge (\lnot (\lnot P \vee \lnot Q \vee \lnot R \vee S)\vee (\lnot (\lnot (\lnot P \vee Q) \vee R) \vee S))\]
+\[(\lnot (\lnot ((P \wedge \lnot Q) \vee R) \vee S) \vee (\lnot P \vee \lnot Q \vee \lnot R \vee S))\wedge (\lnot (\lnot P \vee \lnot Q \vee \lnot R \vee S)\vee (\lnot ((P \wedge \lnot Q) \vee R) \vee S))\]
+\[(\lnot ((\lnot(P \wedge \lnot Q) \wedge \lnot R) \vee S) \vee (\lnot P \vee \lnot Q \vee \lnot R \vee S))\wedge (\lnot (\lnot P \vee \lnot Q \vee \lnot R \vee S)\vee (\lnot ((P \wedge \lnot Q) \vee R) \vee S))\]
+\bigskip\\
+now only simplifying left hand side\\
+\[(\lnot ((\lnot(P \wedge \lnot Q) \wedge \lnot R) \vee S) \vee (\lnot P \vee \lnot Q \vee \lnot R \vee S))\]
+\[(\lnot (((\lnot P \vee Q) \wedge \lnot R) \vee S) \vee (\lnot P \vee \lnot Q \vee \lnot R \vee S))\]
+\[((\lnot((\lnot P \vee Q) \wedge \lnot R) \wedge \lnot S) \vee (\lnot P \vee \lnot Q \vee \lnot R \vee S))\]
+\[((((P \wedge \lnot Q) \vee R) \wedge \lnot S) \vee (\lnot P \vee \lnot Q \vee \lnot R \vee S))\]
+\[((((P \vee R ) \wedge (\lnot Q \vee R) ) \wedge \lnot S) \vee (\lnot P \vee \lnot Q \vee \lnot R \vee S))\]
+\[(P \vee R \vee \lnot P \vee \lnot Q \vee \lnot R \vee S) \wedge (\lnot Q \vee R \vee \lnot P \vee \lnot Q \vee \lnot R \vee S ) \wedge (\lnot S \vee \lnot P \vee \lnot Q \vee \lnot R \vee S)\]
+\[1\]
+\bigskip\\
+now right hand side...\\
+\[((P \wedge Q \wedge R \wedge \lnot S)\vee (\lnot ((P \wedge \lnot Q) \vee R) \vee S))\]
+\[((P \wedge Q \wedge R \wedge \lnot S)\vee ((\lnot (P \wedge \lnot Q) \wedge \lnot R) \vee S))\]
+\[((P \wedge Q \wedge R \wedge \lnot S)\vee (((\lnot P \vee Q) \wedge \lnot R) \vee S))\]
+\[((P \wedge Q \wedge R \wedge \lnot S)\vee (((\lnot P \wedge \lnot R )\vee (Q \wedge \lnot R) \vee S))\]
+\[(P \wedge Q \wedge R \wedge \lnot S)\vee (\lnot P \wedge \lnot R )\vee (Q \wedge \lnot R) \vee S\]
+\[(P \wedge Q \wedge R \wedge \lnot S)\vee (\lnot P \wedge \lnot R )\vee (Q \vee S )\wedge (\lnot R \vee S)\]
+this is a sum of products, I am going to use my ECE124 knowledge to convert this in to POS (CNF)\\
+
 \section{Generalized DeMorgan's Laws}
 
 \end{document}

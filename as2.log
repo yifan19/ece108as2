@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  31 MAR 2018 08:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  31 MAR 2018 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -991,7 +991,100 @@ Underfull \hbox (badness 10000) in paragraph at lines 985--987
 
  []
 
-[25] [26] [27] (./as2.aux) ) 
+[25] [26]
+Overfull \hbox (80.63643pt too wide) detected at line 1037
+\OT1/cmr/m/n/12 ((\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr
+/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/
+12 Q\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \O
+MS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ! \OT1/cm
+r/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/i
+t/12 Q \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/
+12 S\OT1/cmr/m/n/12 )) \OMS/cmsy/m/n/12 ^ \OT1/cmr/m/n/12 ((\OMS/cmsy/m/n/12 :\
+OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/cmsy/m/n/12 _ :\O
+ML/cmm/m/it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ) \OMS/cm
+sy/m/n/12 ! \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/1
+2 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ \OM
+L/cmm/m/it/12 Q\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R\OT1/cmr/
+m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ))
+ []
+
+
+Overfull \hbox (75.3033pt too wide) detected at line 1038
+\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/
+m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 P
+ \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 Q\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML
+/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m
+/n/12 ) \OMS/cmsy/m/n/12 _ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 
+P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 R
+ \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 )) \OMS/cmsy/m/n/12 ^ \OT
+1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/i
+t/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it
+/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _
+ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr
+/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/
+12 Q\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \O
+MS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ))
+ []
+
+
+Overfull \hbox (59.30327pt too wide) detected at line 1039
+\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/
+m/n/12 ((\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 Q\OT1/cmr/m/n/
+12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ 
+\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OT1/cmr/m/n/12 (\OMS/cm
+sy/m/n/12 :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/cmsy/
+m/n/12 _ :\OML/cmm/m/it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/
+12 )) \OMS/cmsy/m/n/12 ^ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\O
+MS/cmsy/m/n/12 :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/
+cmsy/m/n/12 _ :\OML/cmm/m/it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr
+/m/n/12 ) \OMS/cmsy/m/n/12 _ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12
+ ((\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 Q\OT1/cmr/m/n/12 ) \
+OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/c
+mm/m/it/12 S\OT1/cmr/m/n/12 ))
+ []
+
+
+Overfull \hbox (67.30328pt too wide) detected at line 1040
+\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 ((\OMS/cmsy/m/n/12 :\OT1/cmr
+/m/n/12 (\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 Q\OT1/cmr/m/n/
+12 ) \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _
+ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OT1/cmr/m/n/12 (\OMS/c
+msy/m/n/12 :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/cmsy
+/m/n/12 _ :\OML/cmm/m/it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n
+/12 )) \OMS/cmsy/m/n/12 ^ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\
+OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS
+/cmsy/m/n/12 _ :\OML/cmm/m/it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cm
+r/m/n/12 ) \OMS/cmsy/m/n/12 _ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/1
+2 ((\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 Q\OT1/cmr/m/n/12 ) 
+\OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/
+cmm/m/it/12 S\OT1/cmr/m/n/12 ))
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1043
+
+ []
+
+
+Overfull \hbox (4.37401pt too wide) detected at line 1048
+\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R \OMS/
+cmsy/m/n/12 _ :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/c
+msy/m/n/12 _ :\OML/cmm/m/it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/
+m/n/12 ) \OMS/cmsy/m/n/12 ^ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12
+ Q \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 P
+ \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 R 
+\OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^ \OT1/
+cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 S \OMS/cmsy/m/n/12 _ :\OML/cmm/m
+/it/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/cmsy/m/n/12 _ :\OML/cmm/m/
+it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 )
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1052
+
+ []
+
+[28] (./as2.aux) ) 
 Here is how much of TeX's memory you used:
  39277 strings out of 494954
  1109030 string characters out of 6181003
@@ -1001,4 +1094,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  211i,14n,214p,10374b,6244s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on as2.dvi (27 pages, 125200 bytes).
+Output written on as2.dvi (28 pages, 127612 bytes).

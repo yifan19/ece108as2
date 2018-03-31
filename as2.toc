@@ -42,4 +42,4 @@
 \contentsline {subsection}{\numberline {6.2}Q3}{26}
 \contentsline {subsection}{\numberline {6.3}Q4}{27}
 \contentsline {subsection}{\numberline {6.4}Q8}{27}
-\contentsline {section}{\numberline {7}Generalized DeMorgan's Laws}{27}
+\contentsline {section}{\numberline {7}Generalized DeMorgan's Laws}{28}
