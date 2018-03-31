@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  31 MAR 2018 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.2.23)  31 MAR 2018 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1171,21 +1171,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 1072--1073
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1075
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1086
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1098--1099
+Underfull \hbox (badness 10000) in paragraph at lines 1089--1090
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1112
+Underfull \hbox (badness 10000) in paragraph at lines 1091--1092
 
  []
 
-[29] [30] (./as2.aux) ) 
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 1134--1135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1137
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1137--1139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1140--1142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1142--1144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1146--1148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1154
+
+ []
+
+[31] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 1197--1198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1206--1208
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1218
+
+ []
+
+[34] (./as2.aux) ) 
 Here is how much of TeX's memory you used:
  39974 strings out of 494954
  1123056 string characters out of 6181003
@@ -1195,4 +1275,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  211i,14n,214p,10374b,6244s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on as2.dvi (30 pages, 149192 bytes).
+Output written on as2.dvi (34 pages, 157804 bytes).
