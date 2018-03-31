@@ -197,7 +197,7 @@ $T$ and $\lnot P$ are both True so $T \implies (\neg P \vee R)$ is True\\
 $S$ is True and $P$ is False $\neg(S \iff P)$ is True\\
 \pagebreak
 \section{Tautologies and Friends}
-\subsection{}
+\subsection{Q1}
 $(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
 
 \begin{displaymath}
@@ -210,8 +210,8 @@ T & F & F & F & T \\
 T & T & T & T & T \\
 \end{array}
 \end{displaymath}
-tautology\\
-\subsection{}
+Tautology\\
+\subsection{Q2}
 $(P \wedge Q) \leftrightarrow (P \rightarrow Q)$\\
 \begin{displaymath}
 \begin {array} {|c c |c|c|c|}
@@ -224,9 +224,9 @@ T & T & T & T & T \\
 
 \end{array}
 \end{displaymath}
-not tautology\\
+not Tautology\\
 
-\subsection{}
+\subsection{Q3}
 $(\lnot P \vee Q) \rightarrow (P \rightarrow \lnot Q)$\\
 \begin{displaymath}
 \begin {array} {|c c |c|c|c|}
@@ -239,10 +239,10 @@ T & F & F & T & T \\
 T & T & T & F & F \\ 
 \end{array}
 \end{displaymath} 
-not tautology\\
+not Tautology\\
 \pagebreak
 
-\subsection{}
+\subsection{Q4}
 $(((P \rightarrow Q) \rightarrow P) \rightarrow Q)$\\
 
 \begin{displaymath}
@@ -257,8 +257,8 @@ T & T & T & T & T \\
 
 \end{array}
 \end{displaymath}
-not tautology
-\subsection{}
+not Tautology
+\subsection{Q5}
 $(P \rightarrow (Q \rightarrow (P \rightarrow Q)))$\\
 \begin{displaymath}
 \begin {array} {|c c |c|c|c|}
@@ -272,9 +272,9 @@ T & T & T & T & T \\
 
 \end{array}
 \end{displaymath}
-tautology\\
+Tautology\\
 
-\subsection{}
+\subsection{Q6}
 $((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightarrow Q)$\\
 \begin{displaymath}
 \begin {array} {|c c c|c|c|c|c|c|c|}
@@ -296,7 +296,7 @@ T & T & T & F & T & T & T\\
 we see that column 3 = column 5\\
 the if and only if is true, so tautology\\
 \pagebreak
-\subsection{}
+\subsection{Q7}
 $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
 \begin{displaymath}
 \begin {array} {|c c c c|c|c|c|}
@@ -352,7 +352,7 @@ T & T & T\\
 
 as anyone can clearly see from commutativity of OR, this is a tautology
 \pagebreak
-\subsection{}
+\subsection{Q8}
 $(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (R \rightarrow S)))$\\
 \begin{displaymath}
 \begin {array} {|c c c c|c|c|c|c|c}
@@ -410,7 +410,7 @@ T & T & T & T & T & T & T\\
 \end{array}
 \end{displaymath}
 after brainlessly bruteforce everything in a truth table, we see that this is not a tautology.\\
-\subsection{}
+\subsection{Q9}
 $(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))$\\
 
 \begin{displaymath}
@@ -753,7 +753,7 @@ Tautology\\
 \pagebreak
 
 \section{Kalish-Montegue Derivations}
-
+\subsection{Q1}
 $(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
 
 \[
@@ -772,7 +772,7 @@ $(P \wedge Q) \rightarrow (P \rightarrow Q)$\\
  } 
 }
 \]
-
+\subsection{Q5}
 $(P \rightarrow (Q \rightarrow (P \rightarrow Q)))$\\
 
 \[
@@ -797,7 +797,8 @@ $(P \rightarrow (Q \rightarrow (P \rightarrow Q)))$\\
 \]
 
 $((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightarrow Q)$\\
-
+\subsection{Q6}
+\subsubsection{Forward}
 \[
 \KMproof{
   \cbblk{
@@ -823,6 +824,7 @@ $((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightar
   } 
 }
 \]
+\subsubsection{Backward}
 \[
 \KMproof{
   \cbblk{
@@ -847,7 +849,8 @@ $((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightar
   } 
 }
 \]
-\pagebreak\\ 
+\pagebreak 
+\subsection{Q7}
 $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
 \[
 \KMproof{
@@ -874,6 +877,7 @@ $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
   } 
 }
 \]
+\subsection{Q9}
 \section{Premises}
 \subsection{Premises are Contradictions}
 
@@ -978,7 +982,54 @@ therefore
   \]
   is a contradiction
 \section{Normal Form}
+  Well, knowing that Q1,Q5,Q6,Q7 and Q9 are tautologies, their CNF is just 1\\
+  I will only do the CNF for the 4 other questions\\
+\subsection{Q2}
+\[(P \wedge Q) \leftrightarrow (P \rightarrow Q)\]
+\[(P \wedge Q) \leftrightarrow (\lnot P \vee Q)\]
+\[((P \wedge Q) \rightarrow (\lnot P \vee Q)) \wedge 
+  ((\lnot P \vee Q) \rightarrow (P \wedge Q)) \]
+\[(\lnot (P \wedge Q)\vee (\lnot P \vee Q)) \wedge 
+  (\lnot (\lnot P \vee Q) \vee (P \wedge Q)) \]
+\[(\lnot P \vee \lnot Q)\vee (\lnot P \vee Q)) \wedge 
+  ((P \wedge \lnot Q) \vee (P \wedge Q)) \]
+\[(\lnot P \vee \lnot Q\vee \lnot P \vee Q) \wedge 
+  ((P \wedge \lnot Q) \vee (P \wedge Q)) \]
+\[ (P \wedge \lnot Q) \vee (P \wedge Q) \]
+\[ ((P \wedge \lnot Q) \vee P) \wedge ((P \wedge \lnot Q)  \vee Q) \]
+\[ ((P \vee P) \wedge (\lnot Q \vee P) \wedge ((P \vee Q)\wedge 
+  (\not Q \vee Q) \]
+\[ P \wedge (\lnot Q \vee P) \wedge ((P \vee Q)\]
+\[P\]
+\subsection{Q3}
+\[(\lnot P \vee Q) \rightarrow (P \rightarrow \lnot Q)\]
+\[\lnot (\lnot P \vee Q) \vee (P \rightarrow \lnot Q)\]
+\[\lnot (\lnot P \vee Q) \vee (\lnot P \vee \lnot Q)\]
+\[(P \wedge \lnot Q) \vee (\lnot P \vee \lnot Q)\]
+\[(P \vee (\lnot P \vee \lnot Q)) \wedge ((\lnot Q) \vee (\lnot P \vee \lnot Q))\]
+\[ \lnot P \vee \lnot Q\]
 
+
+\subsection{Q4}
+\[(((P \rightarrow Q) \rightarrow P) \rightarrow Q)\]
+\[(((\lnot P \vee Q) \rightarrow P) \rightarrow Q)\]
+\[((\lnot (\lnot P \vee Q) \vee P) \rightarrow Q)\]
+\[(\lnot (\lnot (\lnot P \vee Q) \vee P) \vee Q)\]
+\[(\lnot ((P \wedge \lnot Q) \vee P) \vee Q)\]
+\[(\lnot ((P \vee P) \wedge (\lnot Q \vee P)) \vee Q)\]
+\[((\lnot (P \vee P) \vee \lnot (\lnot Q \vee P)) \vee Q)\]
+\[((\lnot P \vee (Q \wedge \lnot P)) \vee Q)\]
+\[(((\lnot P \vee Q )\wedge (\lnot P \vee \lnot P)) \vee Q)\]
+\[(((\lnot P \vee Q )\wedge \lnot P) \vee Q)\]
+\[(\lnot P \vee Q )\vee Q) \wedge (\lnot P \vee Q)\]
+\[(\lnot P \vee Q) \wedge (\lnot P \vee Q)\]
+\[\lnot P \vee Q\]
+
+
+
+\subsection{Q8}
+
+\[(((P \rightarrow Q) \rightarrow R) \rightarrow S) \leftrightarrow (P \rightarrow (Q \rightarrow (R \rightarrow S)))\]
 \section{Generalized DeMorgan's Laws}
 
 \end{document}
