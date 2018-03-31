@@ -1077,23 +1077,27 @@ probably should check the base case with one operator (i = 2)\\
 \end{equation}
 \subsubsection{or to and forward}
 \[
-\kmproof{
+\KMproof{
   \cbblk{
-  \proofline{ (p_{1} \vee p_{2}) \rightarrow \lnot (\lnot p_{1} \wedge \lnot p_{2})}{}
+  \proofline{ (P_{1} \vee P_{2}) \rightarrow \lnot (\lnot P_{1} \wedge \lnot P_{2})}{}
   }{
-    \proofline{(p_{1} \vee p_{2})}{1,cd}
+    \proofline{(P_{1} \vee P_{2})}{1,CD}
      \cbblk{
-     \proofline{\lnot (\lnot p_{1} \wedge \lnot p_{2})}{2,subder}
+     \proofline{\lnot (\lnot P_{1} \wedge \lnot P_{2})}{2,SUBDERI}
    }{
-      \proofline{(\lnot p_{1} \wedge \lnot p_{2})}{3,id}
-      \proofline{\lnot p_{1}}{4,simp}
-      \proofline{\lnot p_{2}}{4,simp}
-      \proofline{p_{1}}{6,2,mtp}
+      \proofline{(\lnot P_{1} \wedge \lnot P_{2})}{3,ID}
+      \proofline{\lnot P_{1}}{4,SIMP}
+      \proofline{\lnot P_{2}}{4,SIMP}
+      \proofline{P_{1}}{6,2,MTP}
     }
-  } 
+ } 
 }
 \]
 \subsubsection{OR to AND Backward} 
+I need to prove a theorem really quicky before I prove this:
+\subsubsection{Theorem 1}
+\[\frac{\lnot (P_{1} \vee P_{2})}{P_{1}}\]
+
 \[
 \KMproof{
   \cbblk{
@@ -1111,6 +1115,7 @@ probably should check the base case with one operator (i = 2)\\
   }
 }
 \]
+
 \begin{equation}
 (P_{1} \wedge  P_{2}) \leftrightarrow \lnot (\lnot P_{1} \vee \lnot P_{2})
 \end{equation}
