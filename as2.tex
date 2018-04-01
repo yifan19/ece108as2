@@ -15,7 +15,7 @@
 \pagenumbering{arabic}
 \tableofcontents
 \newpage
-
+\renewcommand{\thesection}{\Roman{section}}
 \section{Theorem 1}
  need to prove a theorem really quicky before I prove this:\\
 \[\frac{\lnot (P_{1} \vee P_{2})}{\lnot P_{1}}\]
@@ -59,7 +59,9 @@ proof by models through semantic tableau:\\
   } 
 }
 \]
-\pagebreak
+\pagebreak\\
+\setcounter{section}{0}
+\renewcommand{\thesection}{\arabic{section}}
 \section{Formalizing an Argument}
 \subsection{Big Bang Theory}
 If the Big Bang Theory is correct then either there was a time before anything existed or the world will come to an end.  The world will not come to an end.  Therefore, if there was no time before anything existed, the Big Bang Theory is incorrect.
