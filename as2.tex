@@ -16,6 +16,50 @@
 \tableofcontents
 \newpage
 
+\section{Theorem 1}
+ need to prove a theorem really quicky before I prove this:\\
+\[\frac{\lnot (P_{1} \vee P_{2})}{\lnot P_{1}}\]
+proof by models through semantic tableau:\\
+\begin{forest}
+[$\lnot (P_{1} \vee P_{2}):T \CommaPunct \lnot P_{1} : F$
+  [$P_{1} : T$
+    [$(P_{1} \vee P_{2}):F$
+      [$(P_{1}:F) \CommaPunct (P_{2} : F)$
+        [X]
+      ]
+    ]
+  ]
+]
+\end{forest}
+\pagebreak
+\section{Theorem2}
+\[ \frac{P \rightarrow Q}{ \lnot P \vee Q}
+\]
+\[
+\KMproof{
+  \cbblk{
+  \proofline{(P \rightarrow Q) \rightarrow (\lnot P \vee Q) }{}
+  }{
+    \proofline{P \rightarrow Q}{1,CD}
+     \cbblk{
+     \proofline{(\lnot P \vee Q)}{subDer}
+     }{
+       \proofline{\lnot (\lnot P \vee Q)}{ID}
+       \cbblk{
+       \proofline{\lnot P}{subDerv}
+       }{
+          \proofline{P}{ID}
+          \proofline{Q}{6,2,MP}
+          \proofline{\lnot P \vee Q}{7,ADD}
+          \proofline{\lnot(\lnot P \vee Q)}{4}
+        } 
+        \proofline{\lnot P \vee Q}{4,ADD}
+        \proofline{\lnot (\lnot P \vee Q)}{4}
+     }
+  } 
+}
+\]
+\pagebreak
 \section{Formalizing an Argument}
 \subsection{Big Bang Theory}
 If the Big Bang Theory is correct then either there was a time before anything existed or the world will come to an end.  The world will not come to an end.  Therefore, if there was no time before anything existed, the Big Bang Theory is incorrect.
@@ -853,7 +897,8 @@ $((P \wedge \lnot Q) \rightarrow \lnot R) \leftrightarrow ((P \wedge R) \rightar
 \]
 \pagebreak 
 \subsection{Q7}
-$(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
+$(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$
+\subsubsection{forward}
 \[
 \KMproof{
   \cbblk{
@@ -861,25 +906,75 @@ $(((P \vee Q) \vee R) \vee S) \leftrightarrow (P \vee (Q \vee (R \vee S)))$\\
   }{
     \proofline{(((P \vee Q) \vee R) \vee S)}{1,CD}
      \cbblk{
-     \proofline{(P \vee (Q \vee (R \vee S)))}{2,subDer}
+     \proofline{(P \vee (Q \vee (R \vee S)))}{subDer}
    }{
       \proofline{\lnot (P \vee (Q \vee (R \vee S)))}{3,ID}
-      \proofline{P}{4,SIMP}
-      \proofline{R}{4,SIMP}
-      \proofline{\lnot \lnot R}{6,DN}
-      \proofline{\lnot (P \wedge \lnot Q)} {2,7,MT}
-      \cbblk{
-        \proofline{Q} {8,subDerv}
-       }{
-        \proofline{\lnot Q}{9,ID}
-        \proofline{P \wedge \lnot Q}{5,10,ADJ}
-        \proofline{\lnot (P \wedge \lnot Q)}{8}
-        }
+      \proofline{\lnot P}{4,Theorem 1}
+      \proofline{\lnot (Q \vee (R \vee S))}{4,Theorem1}
+      \proofline{\lnot Q}{6,Theorem1}
+      \proofline{\lnot(R \vee S)}{6,Theorem1}
+      \proofline{\lnot R }{8,Theorem1}
+      \proofline{\lnot S }{8,Theorem1}
+      \proofline{((P \vee Q) \vee R)}{2,10,MTP}
+      \proofline{(P \vee Q) }{9,11,MTP}
+      \proofline{P}{7,12,MTP}
+    }
+  } 
+}
+\]
+\subsubsection{backward}
+\[
+\KMproof{
+  \cbblk{
+  \proofline{(((P \vee Q) \vee R) \vee S) \leftarrow (P \vee (Q \vee (R \vee S)))}{}
+  }{
+    \proofline{(P \vee (Q \vee (R \vee S)))}{1,CD}
+     \cbblk{
+     \proofline{(((P \vee Q) \vee R) \vee S)}{subDer}
+   }{
+      \proofline{\lnot (((P \vee Q) \vee R) \vee S)}{3,ID}
+      \proofline{\lnot S}{4,Theorem 1}
+      \proofline{\lnot ((P \vee Q) \vee R)}{4,Theorem1}
+      \proofline{\lnot R}{6,Theorem1}
+      \proofline{\lnot(P \vee Q)}{6,Theorem1}
+      \proofline{\lnot P }{8,Theorem1}
+      \proofline{\lnot Q }{8,Theorem1}
+      \proofline{Q \vee (R \vee S)}{9,10,MTP}
+      \proofline{(R \vee S) }{10,11,MTP}
+      \proofline{R}{5,12,MTP}
     }
   } 
 }
 \]
 \subsection{Q9}
+
+\subsubsection{Actual Proof}
+\[(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))\]
+\[
+\KMproof{
+  \cbblk{
+  \proofline{(P \rightarrow (\lnot R \rightarrow \lnot S)) \vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))}{}
+  }{
+    \proofline{\lnot((P \rightarrow (\lnot R \rightarrow \lnot S)) ...}{}
+    \proofline{...\vee ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R)))}{1,ID}
+    \proofline{\lnot (P \rightarrow (\lnot R \rightarrow \lnot S))}{2,Theorem1}
+    \proofline{\lnot ((S \rightarrow (P \vee \lnot T)) \vee (\lnot Q \rightarrow R))}{2,Theorem1}
+    \proofline{\lnot (S \rightarrow (P \vee \lnot T))}{5,Theorem1}
+    \proofline{\lnot(\lnot Q \rightarrow R)}{5,Theorem1}
+    \proofline{\lnot( Q \vee R)}{7,Theorem2}
+    \proofline{\lnot Q}{8,Theorem1}
+    \proofline{\lnot R}{8,Theorem1}
+    \proofline{\lnot(\lnot S \vee (P \vee \lnot T))}{6,Theorem2}
+    \proofline{S}{11,Theorem1}
+    \proofline{\lnot (P \vee \lnot T)}{11,Theorem1}
+    \proofline{\lnot P}{13,Theorem1}
+    \proofline{T}{13,Theorem1}
+    \proofline{\lnot ( \lnot P \vee (\lnot R \rightarrow \lnot S))}{3,Theorem2}
+    \proofline{4}{16,Theorem 1}
+    \proofline{\lnot P}{14}
+  }
+}
+\]
 \section{Premises}
 \subsection{Premises are Contradictions}
 
