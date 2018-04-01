@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.4.1)  1 APR 2018 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.4.1)  1 APR 2018 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1019,47 +1019,42 @@ Overfull \hbox (9.02574pt too wide) detected at line 897
  []
 
 [23] [24] [25]
-Overfull \hbox (19.18211pt too wide) detected at line 977
+Overfull \hbox (19.18211pt too wide) detected at line 981
 []
  []
 
 [26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 991--995
+Underfull \hbox (badness 10000) in paragraph at lines 995--999
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1007
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1011
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1009--1011
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1015
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1037--1039
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1056--1058
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1062
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1043
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1082--1084
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1067
 
  []
 
-[30] [31]
-Overfull \hbox (80.63643pt too wide) detected at line 1134
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1088--1090
+
+ []
+
+[31]
+Overfull \hbox (80.63643pt too wide) detected at line 1140
 \OT1/cmr/m/n/12 ((\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr
 /m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/
 12 Q\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \O
@@ -1076,7 +1071,7 @@ m/n/12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ))
  []
 
 
-Overfull \hbox (75.3033pt too wide) detected at line 1135
+Overfull \hbox (75.3033pt too wide) detected at line 1141
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/
 m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 P
  \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 Q\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ \OML
@@ -1094,7 +1089,7 @@ MS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 ))
  []
 
 
-Overfull \hbox (59.30327pt too wide) detected at line 1136
+Overfull \hbox (59.30327pt too wide) detected at line 1142
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/
 m/n/12 ((\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 Q\OT1/cmr/m/n/
 12 ) \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _ 
@@ -1111,7 +1106,7 @@ mm/m/it/12 S\OT1/cmr/m/n/12 ))
  []
 
 
-Overfull \hbox (67.30328pt too wide) detected at line 1137
+Overfull \hbox (67.30328pt too wide) detected at line 1143
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OT1/cmr/m/n/12 ((\OMS/cmsy/m/n/12 :\OT1/cmr
 /m/n/12 (\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 Q\OT1/cmr/m/n/
 12 ) \OMS/cmsy/m/n/12 ^ :\OML/cmm/m/it/12 R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 _
@@ -1128,12 +1123,12 @@ cmm/m/it/12 S\OT1/cmr/m/n/12 ))
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1137--1140
+Underfull \hbox (badness 10000) in paragraph at lines 1143--1146
 
  []
 
 
-Overfull \hbox (4.37401pt too wide) detected at line 1145
+Overfull \hbox (4.37401pt too wide) detected at line 1151
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 R \OMS/
 cmsy/m/n/12 _ :\OML/cmm/m/it/12 P \OMS/cmsy/m/n/12 _ :\OML/cmm/m/it/12 Q \OMS/c
 msy/m/n/12 _ :\OML/cmm/m/it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/
@@ -1146,8 +1141,8 @@ cmr/m/n/12 (\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 S \OMS/cmsy/m/n/12 _ :\OML/cmm/m
 it/12 R \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 )
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1149
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1155
 
  []
 
@@ -1161,62 +1156,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 1146--1149
 \@karnaughmap@local@coordinateonecounter@=\count183
 \@karnaughmap@local@coordinatetwocounter@=\count184
 
-Underfull \hbox (badness 10000) in paragraph at lines 1154--1162
+Underfull \hbox (badness 10000) in paragraph at lines 1160--1168
 
  []
 
-[32] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1168--1181
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 1173--1174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1184--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1186--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1190--1191
 
  []
 
 
-Overfull \hbox (5.45729pt too wide) detected at line 1207
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1193
+
+ []
+
+
+Overfull \hbox (5.45729pt too wide) detected at line 1213
 []
  []
 
 [34]
-Overfull \hbox (19.65714pt too wide) detected at line 1226
+Overfull \hbox (19.65714pt too wide) detected at line 1232
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1230
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1230--1232
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1238
 
  []
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1232--1234
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1235--1237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1237--1239
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1240
 
  []
 
@@ -1226,7 +1211,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1241--1243
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1247
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1245
 
  []
 
@@ -1235,23 +1220,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 1247--1249
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1251--1253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1253--1255
+
+ []
+
 [36]
-Overfull \hbox (19.65714pt too wide) detected at line 1290
+Overfull \hbox (19.65714pt too wide) detected at line 1296
 []
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1292--1293
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1293--1295
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1297--1298
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1299
 
  []
 
@@ -1261,22 +1246,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 1299--1301
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1301--1303
+Underfull \hbox (badness 10000) in paragraph at lines 1303--1304
 
  []
 
-[38]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1305--1307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1309--1311
+Underfull \hbox (badness 10000) in paragraph at lines 1307--1309
+
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1311--1313
+Underfull \hbox (badness 10000) in paragraph at lines 1315--1317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1317--1319
 
  []
 
@@ -1290,4 +1285,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  211i,14n,214p,10374b,6244s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on as2.dvi (39 pages, 168556 bytes).
+Output written on as2.dvi (39 pages, 169020 bytes).

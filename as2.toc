@@ -32,8 +32,9 @@
 \contentsline {subsubsection}{\numberline {6.3.1}Forward}{23}
 \contentsline {subsubsection}{\numberline {6.3.2}Backward}{24}
 \contentsline {subsection}{\numberline {6.4}Q7}{25}
-\contentsline {subsubsection}{\numberline {6.4.1}forward}{25}
-\contentsline {subsubsection}{\numberline {6.4.2}backward}{26}
+\contentsline {subsubsection}{\numberline {6.4.1}Theorem 1}{25}
+\contentsline {subsubsection}{\numberline {6.4.2}forward}{25}
+\contentsline {subsubsection}{\numberline {6.4.3}backward}{26}
 \contentsline {subsection}{\numberline {6.5}Q9}{26}
 \contentsline {subsubsection}{\numberline {6.5.1}Actual Proof}{26}
 \contentsline {section}{\numberline {7}Premises}{27}
@@ -41,11 +42,11 @@
 \contentsline {subsection}{\numberline {7.2}Premises are Tautologies}{28}
 \contentsline {subsection}{\numberline {7.3}Some Practice}{28}
 \contentsline {subsubsection}{\numberline {7.3.1}Truth Table}{29}
-\contentsline {subsubsection}{\numberline {7.3.2}KM derivation}{29}
-\contentsline {section}{\numberline {8}Normal Form}{30}
-\contentsline {subsection}{\numberline {8.1}Q2}{30}
+\contentsline {subsubsection}{\numberline {7.3.2}KM derivation}{30}
+\contentsline {section}{\numberline {8}Normal Form}{31}
+\contentsline {subsection}{\numberline {8.1}Q2}{31}
 \contentsline {subsection}{\numberline {8.2}Q3}{31}
-\contentsline {subsection}{\numberline {8.3}Q4}{31}
+\contentsline {subsection}{\numberline {8.3}Q4}{32}
 \contentsline {subsection}{\numberline {8.4}Q8}{32}
 \contentsline {section}{\numberline {9}Generalized DeMorgan's Laws}{34}
 \contentsline {subsection}{\numberline {9.1}Theorem 1}{34}
