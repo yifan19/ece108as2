@@ -181,22 +181,35 @@ P \implies Q
 \neg P \implies (R \vee S)
 \end{equation}
 \begin{equation} 
+Q \implies T
+\end{equation}
+\begin{equation} 
 (T \vee S) \implies U
 \end{equation}
 \begin{equation} 
 \textbf{as conclusion: } \neg U \implies R
 \end{equation}\\
-Logic is not sound\\
-I can find a falsifying assignment:\\
-$P:True \CommaPunct Q:True \CommaPunct R:False\CommaPunct T:False \CommaPunct S:False \CommaPunct  U:False$\\
-The conclusion is false since:\\
-$\lnot U \rightarrow R : F$\\
-because $True \rightarrow False : False$\\
-But all the premises are true:\\
-$P$ and $Q$ are True so $P \rightarrow Q$ is True\\
-$\lnot P$ is False so $ \neg P \rightarrow(R \vee S)$ is True\\
-$T$ and $S$ are both False so $ (T \vee S) \rightarrow \lnot U$ is True\\
 
+\[
+\KMproof{
+  \cbblk{
+  \proofline{\lnot U \rightarrow R}{}
+  }{
+    \proofline{\lnot U}{1,CD}
+    \proofline{(T \vee S) \rightarrow U }{P12}
+    \proofline{\lnot (T \vee S)}{2,3,MT}
+    \proofline{\lnot T}{4,Theorem1}
+    \proofline{\lnot S}{4,Theorem1}
+    \proofline{Q \rightarrow T}{P11}
+    \proofline{\lnot Q}{5,7,MT}
+    \proofline{P \rightarrow Q}{P9}
+    \proofline{\lnot P}{8,9,MT}
+    \proofline{\lnot P \rightarrow (R \vee S)}{P10}
+    \proofline{(R \vee S)}{10,11,MP}
+    \proofline{R}{6,12,MTP}
+    } 
+  }
+\]
 \pagebreak
 \subsection{colonel and the murder}
 If the colonel was out of the room when the murder was committed then he couldn't have been right about the weapon used.  Either the butler is lying or he knows who the murderer was.  If Lady Barntree was not the murderer then either the colonel was in the room at the time or or the butler is lying.  Either the butler knows who the murderer was or the colonel was out of the room at the time of the murder.  Therefore, if the colonel was right about the weapon then Lady Barntree was the murderer.
